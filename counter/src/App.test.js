@@ -2,8 +2,9 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders Change Color', () => {
+test('renders Counter', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Change Color/i);
+  const linkElement = getByText(/Counter/i);
   expect(linkElement).toBeInTheDocument();
 });
+

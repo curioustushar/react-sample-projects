@@ -7,21 +7,21 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 
 ## Examples
 
-01. [Color Flipper](./01-color-flipper)
-02. [Counter](./02-counter)
-03. [Reviews](./03-reviews)
-04. [Navbar](./04-navbar)
-05. [Sidebar](./05-sidebar)
-06. [Modal](./06-modal)
-07. [Questions](./07-questions)
-08. [Menu](./08-menu)
-09. [Video](./09-video)
-10. [Scroll](./10-scroll)
-11. [Tabs](./11-tabs)
-12. [Countdown Timer](./12-countdown-timer)
-13. [Lorem Ipsum](./13-lorem-ipsum)
-14. [Todo](./14-todo)
-15. [Slider](./15-slider)
+01. [Color Flipper](./color-flipper)
+02. [Counter](./counter)
+03. [Reviews](./reviews)
+04. [Navbar](./navbar)
+05. [Sidebar](./sidebar)
+06. [Modal](./modal)
+07. [Questions](./questions)
+08. [Menu](./menu)
+09. [Video](./video)
+10. [Scroll](./scroll)
+11. [Tabs](./tabs)
+12. [Countdown Timer](./countdown-timer)
+13. [Lorem Ipsum](./lorem-ipsum)
+14. [Todo](./todo)
+15. [Slider](./slider)
 
 ## TODO
 

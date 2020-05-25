@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
 
 function App() {
-  const [toggleModal, setToggleModel] = useState(false);
+  const [toggleModal, setToggleModal] = useState(false);
   const [toggleClass, setToggleClass] = useState('');
 
-  const toggleModalFn = () => setToggleModel(!toggleModal);
+  const toggleModalFn = () => setToggleModal(!toggleModal);
 
   useEffect(() => {
     setToggleClass(toggleModal ? 'open-modal' : '');

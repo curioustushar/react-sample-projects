@@ -6,9 +6,9 @@ function CategoryButton(props) {
     return (
         <button
             type="button"
-            className="filter-btn"
+            className={`filter-btn ${props.active ? 'active' : ''}`}
             data-id={props.category}
-            onClick={() => props.fn(props.category)}
+            onClick={() => props.onClickFilter(props.category)}
         >
             {props.category}
         </button>
@@ -17,6 +17,6 @@ function CategoryButton(props) {
 
 CategoryButton.propTypes = {
     category: PropTypes.string.isRequired,
-    fn: PropTypes.func.isRequired,
+    onClickFilter: PropTypes.func.isRequired,
 };
 export default CategoryButton;

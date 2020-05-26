@@ -38,7 +38,8 @@
     transition: var(--transition);
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn.active {
     background: var(--clr-gold);
     color: var(--clr-white);
 }

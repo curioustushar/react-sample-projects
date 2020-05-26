@@ -9,17 +9,24 @@ function App() {
       values.push(item.category);
     }
     return values;
-  }, ['all']);
-
+  }, ['all']).map((i) => {
+    if (i === 'all') return { category: i, active: true };
+    return { category: i, active: false };
+  });
 
   const [filterdMenuItem, setFilterdMenuItem] = useState(menuItems);
+  const [allCategories, setAllCategories] = useState(categories);
 
   const filterMenuItems = (category) => {
+    categories.forEach((i) => {
+      if (i.category === category) return i.active = true;
+      i.active = false;
+    });
+    setAllCategories(categories);
     if (category === 'all') return setFilterdMenuItem(menuItems);
     const newMenus = menuItems.filter(menuItem => menuItem.category === category);
     return setFilterdMenuItem(newMenus);
   };
-
 
   return (
     <div className="App">
@@ -29,11 +36,12 @@ function App() {
           <div className="underline"></div>
         </div>
         <div className="btn-container">
-          {categories.map((item, key) =>
+          {allCategories.map((item, key) =>
             <CategoryButton
               key={key}
-              category={item}
-              fn={filterMenuItems}
+              category={item.category}
+              onClickFilter={filterMenuItems}
+              active={item.active}
             />
           )}
         </div>

@@ -39,8 +39,8 @@ function App() {
 
           <ul className="social-icons">
             <li>
-              <a href="https://www.twitter.com/curioustushar">
-                <i className="fab fa-facebook"></i>
+              <a href="https://www.github.com/curioustushar">
+                <i className="fab fa-github"></i>
               </a>
             </li>
             <li>
@@ -49,18 +49,23 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com/curioustushar">
-                <i className="fab fa-behance"></i>
+              <a href="https://stackoverflow.com/users/2224265/tushar-gupta-curioustushar">
+                <i className="fab fa-stack-overflow"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com/curioustushar">
+              <a href="https://www.linkedin.com/in/curioustushar/">
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com">
-                <i className="fab fa-sketch"></i>
+              <a href="https://www.freecodecamp.com/curioustushar">
+                <i className="fab fa-free-code-camp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.hackerrank.com/curioustushar">
+                <i className="fab fa-hackerrank"></i>
               </a>
             </li>
           </ul>

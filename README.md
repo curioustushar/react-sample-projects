@@ -37,6 +37,7 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Questions     | <img class="product-image" src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)         |
 | Menu          | <img class="product-image" src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                   |
 | Video         | <img class="product-image" src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                 |
+| Lorem ipsum   | <img class="product-image" src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)     |
 
 ## TODO
 

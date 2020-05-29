@@ -26,20 +26,21 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 
 ## demo
 
-| Name          | Preview                                                                            | Source                           |
-| ------------- | ---------------------------------------------------------------------------------- | -------------------------------- |
-| Color Flipper | <img src="docs/screenshots/color-flipper.png" alt="Color Flipper" width="200px" /> | [Color Flipper](./color-flipper) |
-| Counter       | <img src="docs/screenshots/counter.png" alt="Counter" width="200px"/>              | [Counter](./counter)             |
-| Reviews       | <img src="docs/screenshots/reviews.png" alt="reviews" width="200px"/>              | [Reviews](./reviews)             |
-| Navbar        | <img src="docs/screenshots/navbar.png" alt="navbar" width="200px"/>                | [Navbar](./navbar)               |
-| Sidebar       | <img src="docs/screenshots/sidebar.png" alt="sidebar" width="200px"/>              | [Sidebar](./sidebar)             |
-| Modal         | <img src="docs/screenshots/modal.png" alt="modal" width="200px"/>                  | [Modal](./modal)                 |
-| Questions     | <img src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)         |
-| Menu          | <img src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                   |
-| Video         | <img src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                 |
-| Countdown Timer         | <img src="docs/screenshots/countdown-timer.png" alt="video" width="200px" />                 | [Countdown Timer](./countdown-timer)                 |
-| Lorem ipsum   | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)     |
-| Slider         | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)               |
+| Name            | Preview                                                                            | Source                               |
+| --------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
+| Color Flipper   | <img src="docs/screenshots/color-flipper.png" alt="Color Flipper" width="200px" /> | [Color Flipper](./color-flipper)     |
+| Counter         | <img src="docs/screenshots/counter.png" alt="Counter" width="200px"/>              | [Counter](./counter)                 |
+| Reviews         | <img src="docs/screenshots/reviews.png" alt="reviews" width="200px"/>              | [Reviews](./reviews)                 |
+| Navbar          | <img src="docs/screenshots/navbar.png" alt="navbar" width="200px"/>                | [Navbar](./navbar)                   |
+| Sidebar         | <img src="docs/screenshots/sidebar.png" alt="sidebar" width="200px"/>              | [Sidebar](./sidebar)                 |
+| Modal           | <img src="docs/screenshots/modal.png" alt="modal" width="200px"/>                  | [Modal](./modal)                     |
+| Questions       | <img src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)             |
+| Menu            | <img src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                       |
+| Video           | <img src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                     |
+| Countdown Timer | <img src="docs/screenshots/countdown-timer.png" alt="video" width="200px" />       | [Countdown Timer](./countdown-timer) |
+| Lorem ipsum     | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)         |
+| Slider          | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)                   |
+| Image Slider    | <img src="docs/screenshots/image-slider.png" alt="imgage slider" width="200px" />  | [Image Slider](./image-slider)       |
 
 ## TODO
 

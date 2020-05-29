@@ -1,167 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>React Sample Projects</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap" />
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      font-family: Roboto, 'Open Sans', serif;
-    }
-
-    main {
-      text-align: center;
-      max-width: 80%;
-      margin: 50px auto;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    h1 {
-      margin: 32px 0;
-      font-size: 3em;
-    }
-
-    .project-list {
-      display: grid;
-      column-gap: 2em;
-      row-gap: 2em;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-    .product {
-      box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
-        0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
-      transition: transform 1s ease-in-out;
-    }
-
-    .product:hover {
-      transform: scale(0.9);
-    }
-
-    .product a {
-      display: block;
-    }
-
-    .product .product-image {
-      width: 100%;
-      height: 250px;
-    }
-
-    .product-title {
-      padding: 8px;
-      font-size: 1em;
-    }
-
-    @media screen and (max-width: 1200) {
-      .project-list {
-        grid-template-columns: 1fr 1fr 1fr;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Sample Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
       }
-    }
 
-    @media screen and (max-width: 960px) {
-      .project-list {
-        grid-template-columns: 1fr 1fr;
+      html,
+      body {
+        font-family: Roboto, 'Open Sans', serif;
       }
-    }
 
-    @media screen and (max-width: 512px) {
-      .project-list {
-        grid-template-columns: 1fr;
+      main {
+        text-align: center;
+        max-width: 80%;
+        margin: 50px auto;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <main>
-    <h1>React Sample Projects</h1>
-    <div class="project-list">
-      <div class="product">
-        <a href="/color-flipper/">
-          <img class="product-image" src="./screenshots/color-flipper.png" alt="Color Flipper" />
-          <div class="product-title">Color Flipper</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/counter/">
-          <img class="product-image" src="./screenshots/counter.png" alt="Counter" />
-          <div class="product-title">Counter</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/reviews/">
-          <img class="product-image" src="./screenshots/reviews.png" alt="reviews" />
-          <div class="product-title">Reviews</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/navbar/">
-          <img class="product-image" src="./screenshots/navbar.png" alt="navbar" />
-          <div class="product-title">Navbar</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/sidebar/">
-          <img class="product-image" src="./screenshots/sidebar.png" alt="sidebar" />
-          <div class="product-title">Sidebar</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/modal/">
-          <img class="product-image" src="./screenshots/modal.png" alt="modal" />
-          <div class="product-title">Modal</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/questions/">
-          <img class="product-image" src="./screenshots/questions.png" alt="questions" />
-          <div class="product-title">Questions</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/menu/">
-          <img class="product-image" src="./screenshots/menu.png" alt="menu" />
-          <div class="product-title">Menu</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/video/">
-          <img class="product-image" src="./screenshots/video.png" alt="video" />
-          <div class="product-title">Video</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/countdown-timer/">
-          <img class="product-image" src="./screenshots/countdown-timer.png" alt="video" />
-          <div class="product-title">Countdown Timer</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/lorem-ipsum/">
-          <img class="product-image" src="./screenshots/lorem.png" alt="lorem" />
-          <div class="product-title">Lorem Ipsum</div>
-        </a>
-      </div>
-      <div class="product">
-        <a href="/slider/">
-          <img class="product-image" src="./screenshots/slider.png" alt="slider" />
-          <div class="product-title">Slider</div>
-        </a>
-      </div>
-    </div>
-  </main>
-</body>
+      a {
+        text-decoration: none;
+      }
 
+      h1 {
+        margin: 32px 0;
+        font-size: 3em;
+      }
+
+      .project-list {
+        display: grid;
+        column-gap: 2em;
+        row-gap: 2em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      .product {
+        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+          0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+        transition: transform 1s ease-in-out;
+      }
+
+      .product:hover {
+        transform: scale(0.9);
+      }
+
+      .product a {
+        display: block;
+      }
+
+      .product .product-image {
+        width: 100%;
+        height: 250px;
+      }
+
+      .product-title {
+        padding: 8px;
+        font-size: 1em;
+      }
+
+      @media screen and (max-width: 1200) {
+        .project-list {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        .project-list {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media screen and (max-width: 512px) {
+        .project-list {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1>React Sample Projects</h1>
+      <div class="project-list">
+        <div class="product">
+          <a href="/color-flipper/">
+            <img
+              class="product-image"
+              src="./screenshots/color-flipper.png"
+              alt="Color Flipper"
+            />
+            <div class="product-title">Color Flipper</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/counter/">
+            <img
+              class="product-image"
+              src="./screenshots/counter.png"
+              alt="Counter"
+            />
+            <div class="product-title">Counter</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/reviews/">
+            <img
+              class="product-image"
+              src="./screenshots/reviews.png"
+              alt="reviews"
+            />
+            <div class="product-title">Reviews</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/navbar/">
+            <img
+              class="product-image"
+              src="./screenshots/navbar.png"
+              alt="navbar"
+            />
+            <div class="product-title">Navbar</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/sidebar/">
+            <img
+              class="product-image"
+              src="./screenshots/sidebar.png"
+              alt="sidebar"
+            />
+            <div class="product-title">Sidebar</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/modal/">
+            <img
+              class="product-image"
+              src="./screenshots/modal.png"
+              alt="modal"
+            />
+            <div class="product-title">Modal</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/questions/">
+            <img
+              class="product-image"
+              src="./screenshots/questions.png"
+              alt="questions"
+            />
+            <div class="product-title">Questions</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/menu/">
+            <img
+              class="product-image"
+              src="./screenshots/menu.png"
+              alt="menu"
+            />
+            <div class="product-title">Menu</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/video/">
+            <img
+              class="product-image"
+              src="./screenshots/video.png"
+              alt="video"
+            />
+            <div class="product-title">Video</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/tabs/">
+            <img
+              class="product-image"
+              src="./screenshots/tabs.png"
+              alt="tabs"
+            />
+            <div class="product-title">Tabs</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/countdown-timer/">
+            <img
+              class="product-image"
+              src="./screenshots/countdown-timer.png"
+              alt="video"
+            />
+            <div class="product-title">Countdown Timer</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/lorem-ipsum/">
+            <img
+              class="product-image"
+              src="./screenshots/lorem.png"
+              alt="lorem"
+            />
+            <div class="product-title">Lorem Ipsum</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="/slider/">
+            <img
+              class="product-image"
+              src="./screenshots/slider.png"
+              alt="slider"
+            />
+            <div class="product-title">Slider</div>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

@@ -37,8 +37,9 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Questions     | <img src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)         |
 | Menu          | <img src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                   |
 | Video         | <img src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                 |
+| Countdown Timer         | <img src="docs/screenshots/countdown-timer.png" alt="video" width="200px" />                 | [Countdown Timer](./countdown-timer)                 |
 | Lorem ipsum   | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)     |
-| Slidr         | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)               |
+| Slider         | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)               |
 
 ## TODO
 

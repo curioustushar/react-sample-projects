@@ -47,7 +47,7 @@ function App() {
                   key={index}
                   className={`thumbnail ${
                     selctedImage === img ? 'active' : ''
-                  }`}
+                    }`}
                   onClick={(e) => onSelectImage(img)}
                   src={img}
                   alt="img"
@@ -77,7 +77,7 @@ function App() {
             and scrambled it to make a type specimen book.
           </p>
 
-          <input defaultValue="1" type="number" />
+          <input defaultValue="1" type="number" min="1" />
           <button className="btn btn-dark">Add to Cart</button>
         </div>
       </div>

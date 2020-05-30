@@ -31,9 +31,10 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 ## TODO
 
 - \[ ] Improve Docs
-- \[ ] Form Validator 
+- \[ ] Improve Testing
+- \[ ] Form Validator
 - \[ ] Movie Seat Booking | DOM & Local Storage
-- \[ ] Custom Video Player | HTML5 Video API
+- \[ ] Relaxer App | CSS Animations
 - \[ ] Exchange Rate Calculator
 - \[ ] Sortable List | Drag & Drop API
 

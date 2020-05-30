@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import moment from 'moment'
+import useInterval from './hooks/useInterval';
 
 function App() {
   const [giveawayDate] = useState(moment().add(30, 'days'));
@@ -17,14 +18,11 @@ function App() {
     const minutes = format(Math.floor((diff % oneHour) / oneMinute));
     const seconds = format(Math.floor((diff % oneMinute) / 1000));
     return { days, hours, minutes, seconds };
-  }
+  };
 
   const [timeLeft, setTimeLeft] = useState(setTimer());
 
-  useEffect(() => {
-    const timer = setInterval(() => { setTimeLeft(setTimer()) }, 1000);
-    return () => clearInterval(timer);
-  }, [timeLeft]); // eslint-disable-line react-hooks/exhaustive-deps
+  useInterval(() => setTimeLeft(setTimer()), 1000);
 
   return (
     <div className="App">

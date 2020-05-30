@@ -2,21 +2,20 @@ import React, { useState } from 'react';
 import moment from 'moment'
 import useInterval from './hooks/useInterval';
 
+const ONE_MINUTE = 60 * 1000;
+const ONE_HOUR = 60 * ONE_MINUTE;
+const ONE_DAY = 24 * ONE_HOUR;
+
 function App() {
   const [giveawayDate] = useState(moment().add(30, 'days'));
-
-  const oneMinute = 60 * 1000;
-  const oneHour = 60 * oneMinute;
-  const oneDay = 24 * oneHour;
-
   const format = (item) => (item < 10) ? `0${item}` : item;
 
   const setTimer = () => {
     const diff = giveawayDate.valueOf() - moment().valueOf();
-    const days = format(Math.floor(diff / oneDay));
-    const hours = format(Math.floor((diff % oneDay) / oneHour));
-    const minutes = format(Math.floor((diff % oneHour) / oneMinute));
-    const seconds = format(Math.floor((diff % oneMinute) / 1000));
+    const days = format(Math.floor(diff / ONE_DAY));
+    const hours = format(Math.floor((diff % ONE_DAY) / ONE_HOUR));
+    const minutes = format(Math.floor((diff % ONE_HOUR) / ONE_MINUTE));
+    const seconds = format(Math.floor((diff % ONE_MINUTE) / 1000));
     return { days, hours, minutes, seconds };
   };
 

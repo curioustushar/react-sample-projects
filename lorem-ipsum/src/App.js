@@ -48,6 +48,8 @@ function App() {
             name="amount"
             placeholder="5"
             value={number}
+            min="1"
+            max="9"
             onChange={handelNumberChange}
           />
           <button type="submit" className="btn">

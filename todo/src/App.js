@@ -8,23 +8,25 @@ function App() {
   const [groceryList, setGroceryList] = useState(groceryUtils.get());
   const [item, setItem] = useState({ id: generateId(), value: '' });
 
-  const onClickDeleteListItem = (id) => {
+  const deleteHandler = (id) => {
     groceryUtils.remove(id);
     setGroceryList(groceryUtils.get());
   };
 
-  const onClickEditListItem = (id) => {
+  const editHandler = (id) => {
     const currentItem = groceryUtils.getbyId(id);
     if (currentItem.id) {
       setItem({ id: currentItem.id, value: currentItem.value });
     }
   };
 
-  const onclickAddListItem = (e) => {
+  const addHandler = (e) => {
     e.preventDefault();
-    groceryUtils.createOrUpdate(item.id, item.value);
-    setItem({ id: generateId(), value: '' });
-    setGroceryList(groceryUtils.get());
+    if (item.value && item.value.trim()) {
+      groceryUtils.createOrUpdate(item.id, item.value.trim());
+      setItem({ id: generateId(), value: '' });
+      setGroceryList(groceryUtils.get());
+    }
   };
 
   const clearList = () => {
@@ -35,7 +37,7 @@ function App() {
   return (
     <div>
       <section className="section-center">
-        <form className="grocery-form" onSubmit={onclickAddListItem}>
+        <form className="grocery-form" onSubmit={addHandler}>
           <p className="alert"></p>
           <h3>Grocery Bud</h3>
           <div className="form-control">
@@ -55,8 +57,8 @@ function App() {
               key={listItem.id}
               id={listItem.id}
               item={listItem.value}
-              onClickEditListItem={onClickEditListItem}
-              onClickDeleteListItem={onClickDeleteListItem}
+              edit={editHandler}
+              delete={deleteHandler}
             />
           )}
           <button className="clear-btn" onClick={clearList}>clear items</button>

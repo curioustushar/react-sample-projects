@@ -10,13 +10,13 @@ function GroceryList(props) {
                     <button
                         type="button"
                         className="edit-btn"
-                        onClick={() => props.onClickEditListItem(props.id)}>
+                        onClick={() => props.edit(props.id)}>
                         <i className="fas fa-edit"></i>
                     </button>
                     <button
                         type="button"
                         className="delete-btn"
-                        onClick={() => props.onClickDeleteListItem(props.id)}>
+                        onClick={() => props.delete(props.id)}>
                         <i className="fas fa-trash"></i>
                     </button>
                 </div>
@@ -28,8 +28,8 @@ function GroceryList(props) {
 GroceryList.propTypes = {
     id: PropTypes.number.isRequired,
     item: PropTypes.string.isRequired,
-    onClickEditListItem: PropTypes.func.isRequired,
-    onClickDeleteListItem: PropTypes.func.isRequired,
+    edit: PropTypes.func.isRequired,
+    delete: PropTypes.func.isRequired,
 };
 
 export default GroceryList;

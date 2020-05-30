@@ -1,14 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [toggle, setToggle] = useState(false);
-  const [toggleClass, setToggleClass] = useState('');
-
-  useEffect(() => {
-    let newToggleClass = '';
-    if (toggle) newToggleClass = 'show-links';
-    setToggleClass(newToggleClass);
-  }, [toggle]);
 
   return (
     <div className="App">
@@ -22,7 +15,7 @@ function App() {
             </button>
           </div>
 
-          <ul className={`links ${toggleClass}`}>
+          <ul className={`links ${(toggle) ? 'show-links' : ''}`}>
             <li>
               <a href="!#">home</a>
             </li>

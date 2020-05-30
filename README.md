@@ -6,25 +6,7 @@ React Sample Projects
 
 If you found this project useful, then please consider giving it a ⭐️ on Github and sharing it with your friends via social media.
 
-## Examples
-
-1. [Color Flipper](./color-flipper)
-1. [Counter](./counter)
-1. [Reviews](./reviews)
-1. [Navbar](./navbar)
-1. [Sidebar](./sidebar)
-1. [Modal](./modal)
-1. [Questions](./questions)
-1. [Menu](./menu)
-1. [Video](./video)
-1. [Scroll](./scroll)
-1. [Tabs](./tabs)
-1. [Countdown Timer](./countdown-timer)
-1. [Lorem Ipsum](./lorem-ipsum)
-1. [Todo](./todo)
-1. [Slider](./slider)
-
-## demo
+## Demo
 
 | Name            | Preview                                                                            | Source                               |
 | --------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
@@ -37,15 +19,23 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Questions       | <img src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)             |
 | Menu            | <img src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                       |
 | Video           | <img src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                     |
-| Countdown Timer | <img src="docs/screenshots/countdown-timer.png" alt="video" width="200px" />       | [Countdown Timer](./countdown-timer) |
+| Scroll           | <img src="docs/screenshots/scroll.png" alt="Scroll" width="200px" />                 | [Scroll](./scroll)                     |
+| Tabs           | <img src="docs/screenshots/tabs.png" alt="Tabs" width="200px" />                 | [Tabs](./tabs)                     |
+| Countdown Timer | <img src="docs/screenshots/countdown-timer.png" alt="Countdown Timer" width="200px" />       | [Countdown Timer](./countdown-timer) |
 | Lorem ipsum     | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)         |
+| Todo     | <img src="docs/screenshots/todo.png" alt="Todo" width="200px" />           | [Todo](./todo)         |
 | Slider          | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)                   |
 | Image Slider    | <img src="docs/screenshots/image-slider.png" alt="image slider" width="200px" />   | [Image Slider](./image-slider)       |
 | Analog Clock    | <img src="docs/screenshots/analog-clock.png" alt="analog-clock" width="200px" />   | [Analog Clock](./analog-clock)       |
 
 ## TODO
 
-    - Improve Docs
+- \[ ] Improve Docs
+- \[ ] Form Validator 
+- \[ ] Movie Seat Booking | DOM & Local Storage
+- \[ ] Custom Video Player | HTML5 Video API
+- \[ ] Exchange Rate Calculator
+- \[ ] Sortable List | Drag & Drop API
 
 ## Contributing
 
@@ -58,7 +48,28 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 ## Created & Maintained By
 
-Tushar Gupta | [@curioustushar](https://twitter.com/curioustushar)
+<table>
+  <tr>
+    <td align="center"><a href="https://curioustushar.github.io/">
+        <img src="https://avatars3.githubusercontent.com/u/12570521?v=4" width="100px;" alt="Tushar Gupta"/><br />
+        <sub><b>Tushar Gupta</b></sub></a><br />
+        <a href="#" title="Code">💻 </a>
+        <a href="#" title="Documentation">📖</a>
+        <a href="#" title="Ideas">🤔</a>
+        <a href="#" title="Answering Questions">💬 </a>
+        <a href="#" title="Reviewed Pull Requests">👀</a>
+        <a href="#" title="Maintenance">🚧 </a>
+    </td>
+    <td align="center"><a href="http://nmanikiran.com">
+        <img src="https://avatars2.githubusercontent.com/u/3726349?s=460&v=4" width="100px;" alt="Mani Kiran"/><br />
+        <sub><b>Mani Kiran N</b></sub></a><br />
+        <a href="#" title="Code">💻 </a>
+        <a href="#" title="Documentation">📖</a>
+        <a href="#" title="Ideas">🤔</a>  
+        <a href="#" title="Maintenance">🚧 </a>
+    </td>
+  </tr>
+</table>
 
 Feel free to reach out to me through [@curioustushar](https://twitter.com/curioustushar) if you have any questions or feedback! 😊
 

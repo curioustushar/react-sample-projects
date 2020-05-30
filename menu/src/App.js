@@ -19,8 +19,7 @@ function App() {
 
   const filterMenuItems = (category) => {
     categories.forEach((i) => {
-      if (i.category === category) return i.active = true;
-      i.active = false;
+      i.active = (i.category === category);
     });
     setAllCategories(categories);
     if (category === 'all') return setFilterdMenuItem(menuItems);

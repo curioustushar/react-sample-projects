@@ -1,5 +1,16 @@
+const STORE_KEY = 'groceryList';
+
+function updateDataStore(items = '') {
+    localStorage.setItem(STORE_KEY, JSON.stringify(items));
+}
+
+function getFromDataStore() {
+    return localStorage.getItem(STORE_KEY);
+}
+
 function get() {
-    return localStorage.getItem("list") ? JSON.parse(localStorage.getItem("list")) : []
+    const items = getFromDataStore();
+    return items ? JSON.parse(items) : []
 };
 
 function getbyId(id) {
@@ -15,7 +26,7 @@ function edit(id, value) {
         }
         return item;
     });
-    localStorage.setItem("list", JSON.stringify(items));
+    updateDataStore(items);
 }
 
 const helpers = {
@@ -29,17 +40,14 @@ const helpers = {
         const grocery = { id, value };
         const items = get();
         items.push(grocery);
-        localStorage.setItem("list", JSON.stringify(items));
+        updateDataStore(items);
     },
     remove: (id) => {
         let items = get();
         items = items.filter((item) => (item.id !== id));
-        localStorage.setItem("list", JSON.stringify(items));
+        updateDataStore(items);
     },
-    edit,
-    clear: () => {
-        localStorage.setItem("list", '');
-    }
+    clear: () => updateDataStore(),
 };
 
 export default helpers;

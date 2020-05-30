@@ -40,7 +40,8 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Countdown Timer | <img src="docs/screenshots/countdown-timer.png" alt="video" width="200px" />       | [Countdown Timer](./countdown-timer) |
 | Lorem ipsum     | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)         |
 | Slider          | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)                   |
-| Image Slider    | <img src="docs/screenshots/image-slider.png" alt="imgage slider" width="200px" />  | [Image Slider](./image-slider)       |
+| Image Slider    | <img src="docs/screenshots/image-slider.png" alt="image slider" width="200px" />   | [Image Slider](./image-slider)       |
+| Analog Clock    | <img src="docs/screenshots/analog-clock.png" alt="analog-clock" width="200px" />   | [Analog Clock](./analog-clock)       |
 
 ## TODO
 

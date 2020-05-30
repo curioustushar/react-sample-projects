@@ -17,47 +17,47 @@ function App() {
 
           <ul className={`links ${(toggle) ? 'show-links' : ''}`}>
             <li>
-              <a href="!#">home</a>
+              <a href="# ">home</a>
             </li>
             <li>
-              <a href="!#">about</a>
+              <a href="# ">about</a>
             </li>
             <li>
-              <a href="!#">projects</a>
+              <a href="# ">projects</a>
             </li>
             <li>
-              <a href="!#">contact</a>
+              <a href="# ">contact</a>
             </li>
           </ul>
 
           <ul className="social-icons">
             <li>
-              <a href="https://www.github.com/curioustushar">
+              <a target="_blank" href="https://www.github.com/curioustushar">
                 <i className="fab fa-github"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com/curioustushar">
+              <a target="_blank" href="https://www.twitter.com/curioustushar">
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://stackoverflow.com/users/2224265/tushar-gupta-curioustushar">
+              <a target="_blank" href="https://stackoverflow.com/users/2224265/tushar-gupta-curioustushar">
                 <i className="fab fa-stack-overflow"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/curioustushar/">
+              <a target="_blank" href="https://www.linkedin.com/in/curioustushar/">
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.freecodecamp.com/curioustushar">
+              <a target="_blank" href="https://www.freecodecamp.com/curioustushar">
                 <i className="fab fa-free-code-camp"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.hackerrank.com/curioustushar">
+              <a target="_blank" href="https://www.hackerrank.com/curioustushar">
                 <i className="fab fa-hackerrank"></i>
               </a>
             </li>

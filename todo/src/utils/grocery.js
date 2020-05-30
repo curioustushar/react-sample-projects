@@ -1,6 +1,6 @@
 const STORE_KEY = 'groceryList';
 
-function updateDataStore(items = '') {
+function updateDataStore(items = []) {
     localStorage.setItem(STORE_KEY, JSON.stringify(items));
 }
 

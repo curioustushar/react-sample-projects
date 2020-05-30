@@ -15,16 +15,16 @@ function SideBar(props) {
       </div>
       <ul className="links">
         <li>
-          <a href="/">home</a>
+          <a href="# ">home</a>
         </li>
         <li>
-          <a href="/">about</a>
+          <a href="# ">about</a>
         </li>
         <li>
-          <a href="/">projects</a>
+          <a href="# ">projects</a>
         </li>
         <li>
-          <a href="/">contact</a>
+          <a href="# ">contact</a>
         </li>
       </ul>
       <SocialLinks />

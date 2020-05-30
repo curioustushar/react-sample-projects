@@ -10,23 +10,23 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 
 | Name            | Preview                                                                            | Source                               |
 | --------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
-| Color Flipper   | <img src="docs/screenshots/color-flipper.png" alt="Color Flipper" width="200px" /> | [Color Flipper](./color-flipper)     |
-| Counter         | <img src="docs/screenshots/counter.png" alt="Counter" width="200px"/>              | [Counter](./counter)                 |
-| Reviews         | <img src="docs/screenshots/reviews.png" alt="reviews" width="200px"/>              | [Reviews](./reviews)                 |
-| Navbar          | <img src="docs/screenshots/navbar.png" alt="navbar" width="200px"/>                | [Navbar](./navbar)                   |
-| Sidebar         | <img src="docs/screenshots/sidebar.png" alt="sidebar" width="200px"/>              | [Sidebar](./sidebar)                 |
-| Modal           | <img src="docs/screenshots/modal.png" alt="modal" width="200px"/>                  | [Modal](./modal)                     |
-| Questions       | <img src="docs/screenshots/questions.png" alt="questions" width="200px"/>          | [Questions](./questions)             |
-| Menu            | <img src="docs/screenshots/menu.png" alt="menu" width="200px" />                   | [Menu](./menu)                       |
-| Video           | <img src="docs/screenshots/video.png" alt="video" width="200px" />                 | [Video](./video)                     |
-| Scroll           | <img src="docs/screenshots/scroll.png" alt="Scroll" width="200px" />                 | [Scroll](./scroll)                     |
-| Tabs           | <img src="docs/screenshots/tabs.png" alt="Tabs" width="200px" />                 | [Tabs](./tabs)                     |
-| Countdown Timer | <img src="docs/screenshots/countdown-timer.png" alt="Countdown Timer" width="200px" />       | [Countdown Timer](./countdown-timer) |
-| Lorem ipsum     | <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" />           | [Lorem Ipsum](./lorem-ipsum)         |
-| Todo     | <img src="docs/screenshots/todo.png" alt="Todo" width="200px" />           | [Todo](./todo)         |
-| Slider          | <img src="docs/screenshots/slider.png" alt="slider" width="200px" />               | [Slider](./slider)                   |
-| Image Slider    | <img src="docs/screenshots/image-slider.png" alt="image slider" width="200px" />   | [Image Slider](./image-slider)       |
-| Analog Clock    | <img src="docs/screenshots/analog-clock.png" alt="analog-clock" width="200px" />   | [Analog Clock](./analog-clock)       |
+| Color Flipper   | <a href="https://curioustushar.github.io/react-sample-projects/color-flipper"> <img src="docs/screenshots/color-flipper.png" alt="Color Flipper" width="200px" /></a> | [Color Flipper](./color-flipper)     |
+| Counter         | <a href="https://curioustushar.github.io/react-sample-projects/counter"> <img src="docs/screenshots/counter.png" alt="Counter" width="200px"/> </a>             | [Counter](./counter)                 |
+| Reviews         | <a href="https://curioustushar.github.io/react-sample-projects/reviews"> <img src="docs/screenshots/reviews.png" alt="reviews" width="200px"/> </a>             | [Reviews](./reviews)                 |
+| Navbar          | <a href="https://curioustushar.github.io/react-sample-projects/navbar"> <img src="docs/screenshots/navbar.png" alt="navbar" width="200px"/> </a>               | [Navbar](./navbar)                   |
+| Sidebar         | <a href="https://curioustushar.github.io/react-sample-projects/sidebar"> <img src="docs/screenshots/sidebar.png" alt="sidebar" width="200px"/> </a>             | [Sidebar](./sidebar)                 |
+| Modal           | <a href="https://curioustushar.github.io/react-sample-projects/modal"> <img src="docs/screenshots/modal.png" alt="modal" width="200px"/> </a>                 | [Modal](./modal)                     |
+| Questions       | <a href="https://curioustushar.github.io/react-sample-projects/questions"> <img src="docs/screenshots/questions.png" alt="questions" width="200px"/> </a>         | [Questions](./questions)             |
+| Menu            | <a href="https://curioustushar.github.io/react-sample-projects/menu"> <img src="docs/screenshots/menu.png" alt="menu" width="200px" /></a>                   | [Menu](./menu)                       |
+| Video           | <a href="https://curioustushar.github.io/react-sample-projects/video"> <img src="docs/screenshots/video.png" alt="video" width="200px" /></a>                 | [Video](./video)                     |
+| Scroll           | <a href="https://curioustushar.github.io/react-sample-projects/scroll"> <img src="docs/screenshots/scroll.png" alt="Scroll" width="200px" /></a>                 | [Scroll](./scroll)                     |
+| Tabs           | <a href="https://curioustushar.github.io/react-sample-projects/tabs"> <img src="docs/screenshots/tabs.png" alt="Tabs" width="200px" /></a>                 | [Tabs](./tabs)                     |
+| Countdown Timer | <a href="https://curioustushar.github.io/react-sample-projects/countdown-timer"> <img src="docs/screenshots/countdown-timer.png" alt="Countdown Timer" width="200px" /></a>       | [Countdown Timer](./countdown-timer) |
+| Lorem ipsum     | <a href="https://curioustushar.github.io/react-sample-projects/lorem-ipsum"> <img src="docs/screenshots/lorem.png" alt="lorem ipsum" width="200px" /></a>           | [Lorem Ipsum](./lorem-ipsum)         |
+| Todo     | <a href="https://curioustushar.github.io/react-sample-projects/todo"> <img src="docs/screenshots/todo.png" alt="Todo" width="200px" /></a>           | [Todo](./todo)         |
+| Slider          | <a href="https://curioustushar.github.io/react-sample-projects/slider"> <img src="docs/screenshots/slider.png" alt="slider" width="200px" /></a>               | [Slider](./slider)                   |
+| Image Slider    | <a href="https://curioustushar.github.io/react-sample-projects/image-slider"> <img src="docs/screenshots/image-slider.png" alt="image slider" width="200px" /></a>   | [Image Slider](./image-slider)       |
+| Analog Clock    | <a href="https://curioustushar.github.io/react-sample-projects/analog-clock"> <img src="docs/screenshots/analog-clock.png" alt="analog-clock" width="200px" /></a>   | [Analog Clock](./analog-clock)       |
 
 ## TODO
 

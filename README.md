@@ -10,23 +10,23 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 
 | Name            | Preview                                                                            | Source                               |
 | --------------- | ---------------------------------------------------------------------------------- | ------------------------------------ |
-| Color Flipper   | <a href="https://curioustushar.github.io/react-sample-projects/color-flipper"> <img src="docs/screenshots/color-flipper.jpg" alt="Color Flipper" width="200px" /></a> | [Color Flipper](./color-flipper)     |
-| Counter         | <a href="https://curioustushar.github.io/react-sample-projects/counter"> <img src="docs/screenshots/counter.jpg" alt="Counter" width="200px"/> </a>             | [Counter](./counter)                 |
-| Reviews         | <a href="https://curioustushar.github.io/react-sample-projects/reviews"> <img src="docs/screenshots/reviews.jpg" alt="reviews" width="200px"/> </a>             | [Reviews](./reviews)                 |
-| Navbar          | <a href="https://curioustushar.github.io/react-sample-projects/navbar"> <img src="docs/screenshots/navbar.jpg" alt="navbar" width="200px"/> </a>               | [Navbar](./navbar)                   |
-| Sidebar         | <a href="https://curioustushar.github.io/react-sample-projects/sidebar"> <img src="docs/screenshots/sidebar.jpg" alt="sidebar" width="200px"/> </a>             | [Sidebar](./sidebar)                 |
-| Modal           | <a href="https://curioustushar.github.io/react-sample-projects/modal"> <img src="docs/screenshots/modal.jpg" alt="modal" width="200px"/> </a>                 | [Modal](./modal)                     |
-| Questions       | <a href="https://curioustushar.github.io/react-sample-projects/questions"> <img src="docs/screenshots/questions.jpg" alt="questions" width="200px"/> </a>         | [Questions](./questions)             |
-| Menu            | <a href="https://curioustushar.github.io/react-sample-projects/menu"> <img src="docs/screenshots/menu.jpg" alt="menu" width="200px" /></a>                   | [Menu](./menu)                       |
-| Video           | <a href="https://curioustushar.github.io/react-sample-projects/video"> <img src="docs/screenshots/video.jpg" alt="video" width="200px" /></a>                 | [Video](./video)                     |
-| Scroll           | <a href="https://curioustushar.github.io/react-sample-projects/scroll"> <img src="docs/screenshots/scroll.jpg" alt="Scroll" width="200px" /></a>                 | [Scroll](./scroll)                     |
-| Tabs           | <a href="https://curioustushar.github.io/react-sample-projects/tabs"> <img src="docs/screenshots/tabs.jpg" alt="Tabs" width="200px" /></a>                 | [Tabs](./tabs)                     |
-| Countdown Timer | <a href="https://curioustushar.github.io/react-sample-projects/countdown-timer"> <img src="docs/screenshots/countdown-timer.jpg" alt="Countdown Timer" width="200px" /></a>       | [Countdown Timer](./countdown-timer) |
-| Lorem ipsum     | <a href="https://curioustushar.github.io/react-sample-projects/lorem-ipsum"> <img src="docs/screenshots/lorem.jpg" alt="lorem ipsum" width="200px" /></a>           | [Lorem Ipsum](./lorem-ipsum)         |
-| Todo     | <a href="https://curioustushar.github.io/react-sample-projects/todo"> <img src="docs/screenshots/todo.jpg" alt="Todo" width="200px" /></a>           | [Todo](./todo)         |
-| Slider          | <a href="https://curioustushar.github.io/react-sample-projects/slider"> <img src="docs/screenshots/slider.jpg" alt="slider" width="200px" /></a>               | [Slider](./slider)                   |
-| Image Slider    | <a href="https://curioustushar.github.io/react-sample-projects/image-slider"> <img src="docs/screenshots/image-slider.jpg" alt="image slider" width="200px" /></a>   | [Image Slider](./image-slider)       |
-| Analog Clock    | <a href="https://curioustushar.github.io/react-sample-projects/analog-clock"> <img src="docs/screenshots/analog-clock.jpg" alt="analog-clock" width="200px" /></a>   | [Analog Clock](./analog-clock)       |
+| Color Flipper   | <a href="https://curioustushar.github.io/react-sample-projects/color-flipper"> <img loading="lazy" src="docs/screenshots/color-flipper.jpg" alt="Color Flipper" width="200px" /></a> | [Color Flipper](./color-flipper)     |
+| Counter         | <a href="https://curioustushar.github.io/react-sample-projects/counter"> <img loading="lazy" src="docs/screenshots/counter.jpg" alt="Counter" width="200px"/> </a>             | [Counter](./counter)                 |
+| Reviews         | <a href="https://curioustushar.github.io/react-sample-projects/reviews"> <img loading="lazy" src="docs/screenshots/reviews.jpg" alt="reviews" width="200px"/> </a>             | [Reviews](./reviews)                 |
+| Navbar          | <a href="https://curioustushar.github.io/react-sample-projects/navbar"> <img loading="lazy" src="docs/screenshots/navbar.jpg" alt="navbar" width="200px"/> </a>               | [Navbar](./navbar)                   |
+| Sidebar         | <a href="https://curioustushar.github.io/react-sample-projects/sidebar"> <img loading="lazy" src="docs/screenshots/sidebar.jpg" alt="sidebar" width="200px"/> </a>             | [Sidebar](./sidebar)                 |
+| Modal           | <a href="https://curioustushar.github.io/react-sample-projects/modal"> <img loading="lazy" src="docs/screenshots/modal.jpg" alt="modal" width="200px"/> </a>                 | [Modal](./modal)                     |
+| Questions       | <a href="https://curioustushar.github.io/react-sample-projects/questions"> <img loading="lazy" src="docs/screenshots/questions.jpg" alt="questions" width="200px"/> </a>         | [Questions](./questions)             |
+| Menu            | <a href="https://curioustushar.github.io/react-sample-projects/menu"> <img loading="lazy" src="docs/screenshots/menu.jpg" alt="menu" width="200px" /></a>                   | [Menu](./menu)                       |
+| Video           | <a href="https://curioustushar.github.io/react-sample-projects/video"> <img loading="lazy" src="docs/screenshots/video.jpg" alt="video" width="200px" /></a>                 | [Video](./video)                     |
+| Scroll           | <a href="https://curioustushar.github.io/react-sample-projects/scroll"> <img loading="lazy" src="docs/screenshots/scroll.jpg" alt="Scroll" width="200px" /></a>                 | [Scroll](./scroll)                     |
+| Tabs           | <a href="https://curioustushar.github.io/react-sample-projects/tabs"> <img loading="lazy" src="docs/screenshots/tabs.jpg" alt="Tabs" width="200px" /></a>                 | [Tabs](./tabs)                     |
+| Countdown Timer | <a href="https://curioustushar.github.io/react-sample-projects/countdown-timer"> <img loading="lazy" src="docs/screenshots/countdown-timer.jpg" alt="Countdown Timer" width="200px" /></a>       | [Countdown Timer](./countdown-timer) |
+| Lorem ipsum     | <a href="https://curioustushar.github.io/react-sample-projects/lorem-ipsum"> <img loading="lazy" src="docs/screenshots/lorem.jpg" alt="lorem ipsum" width="200px" /></a>           | [Lorem Ipsum](./lorem-ipsum)         |
+| Todo     | <a href="https://curioustushar.github.io/react-sample-projects/todo"> <img loading="lazy" src="docs/screenshots/todo.jpg" alt="Todo" width="200px" /></a>           | [Todo](./todo)         |
+| Slider          | <a href="https://curioustushar.github.io/react-sample-projects/slider"> <img loading="lazy" src="docs/screenshots/slider.jpg" alt="slider" width="200px" /></a>               | [Slider](./slider)                   |
+| Image Slider    | <a href="https://curioustushar.github.io/react-sample-projects/image-slider"> <img loading="lazy" src="docs/screenshots/image-slider.jpg" alt="image slider" width="200px" /></a>   | [Image Slider](./image-slider)       |
+| Analog Clock    | <a href="https://curioustushar.github.io/react-sample-projects/analog-clock"> <img loading="lazy" src="docs/screenshots/analog-clock.jpg" alt="analog-clock" width="200px" /></a>   | [Analog Clock](./analog-clock)       |
 
 ## TODO
 

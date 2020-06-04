@@ -1,0 +1,19 @@
+{
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/tmp": true,
+    "**/dist": true
+  },
+  "npm.enableScriptExplorer": true,
+  "files.associations": {
+    "*.mock": "jsonc"
+  },
+  "prettier.singleQuote": true,
+  "editor.formatOnPaste": true,
+  "prettier.eslintIntegration": true,
+  "prettier.trailingComma": "all",
+  "editor.formatOnSave": true
+}

@@ -69,7 +69,7 @@
 
       .product .product-image {
         width: 100%;
-        height: 250px;
+        height: 200px;
       }
 
       .product-title {
@@ -77,15 +77,17 @@
         font-size: 1em;
       }
 
-      @media screen and (max-width: 1200) {
+      @media screen and (max-width: 1200px) {
         .project-list {
           grid-template-columns: 1fr 1fr 1fr;
+          height: 250px;
         }
       }
 
       @media screen and (max-width: 960px) {
         .project-list {
           grid-template-columns: 1fr 1fr;
+          height: 250px;
         }
       }
 
@@ -309,6 +311,17 @@
               alt="relaxer"
             />
             <div class="product-title">Relaxer</div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="./sortable-list/">
+            <img
+              loading="lazy"
+              class="product-image"
+              src="./screenshots/sortable.jpg"
+              alt="sortable"
+            />
+            <div class="product-title">Sortable List</div>
           </a>
         </div>
       </div>

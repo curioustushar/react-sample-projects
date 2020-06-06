@@ -28,6 +28,7 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Image Slider    | <a href="https://curioustushar.github.io/react-sample-projects/image-slider"> <img loading="lazy" src="docs/screenshots/image-slider.jpg" alt="image slider" width="200px" /></a>          | [Image Slider](./image-slider)       |
 | Analog Clock    | <a href="https://curioustushar.github.io/react-sample-projects/analog-clock"> <img loading="lazy" src="docs/screenshots/analog-clock.jpg" alt="analog-clock" width="200px" /></a>          | [Analog Clock](./analog-clock)       |
 | Relaxer         | <a href="https://curioustushar.github.io/react-sample-projects/relaxer"> <img loading="lazy" src="docs/screenshots/relaxer.jpg" alt="relaxer" width="200px" /></a>                         | [Relaxer](./relaxer)                 |
+| Sortable List   | <a href="https://curioustushar.github.io/react-sample-projects/sortable-list"> <img loading="lazy" src="docs/screenshots/sortable.jpg" alt="sortable" width="200px" /></a>                 | [Sortable List](./sortable-list)     |
 
 ## TODO
 

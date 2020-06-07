@@ -4,15 +4,15 @@ import bgImg from './bg.jpg';
 import muteImg from './mute.png';
 import speakerImg from './speaker.png';
 
+const totalTime = 7500;
+const breatheTime = (totalTime / 5) * 2;
+const holdTime = totalTime / 5;
+
 function App() {
   const [text, setText] = useState('');
   const [containerClass, setContainerClass] = useState('');
-  const [isMute, setisMute] = useState(false);
+  const [isMute, setIsMute] = useState(false);
   const utterranceRef = useRef(null);
-
-  const totalTime = 7500;
-  const breatheTime = (totalTime / 5) * 2;
-  const holdTime = totalTime / 5;
 
   const speak = (voiceText) => {
     if (utterranceRef && !isMute) {
@@ -48,10 +48,14 @@ function App() {
       utterranceRef.current = new SpeechSynthesisUtterance();
       utterranceRef.current.rate = 1;
       utterranceRef.current.pitch = 0.5;
-      setisMute(true);
+      const prevMaute = localStorage.getItem('isMute');
+      if (prevMaute && prevMaute === 'true') {
+        setIsMute(true);
+      }
     }
     breathAnimation();
     return () => {
+      localStorage.setItem('isMute', isMute);
       if (utterranceRef) window.speechSynthesis.cancel();
     };
   }, []);
@@ -65,7 +69,7 @@ function App() {
         src={isMute ? muteImg : speakerImg}
         alt="icon"
         className="speak"
-        onClick={(e) => setisMute(!isMute)}
+        onClick={(e) => setIsMute(!isMute)}
       />
       <div className={`container ${containerClass}`} id="container">
         <div className="circle"></div>

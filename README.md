@@ -29,16 +29,17 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Analog Clock    | <a href="https://curioustushar.github.io/react-sample-projects/analog-clock"> <img loading="lazy" src="docs/screenshots/analog-clock.jpg" alt="analog-clock" width="200px" /></a>          | [Analog Clock](./analog-clock)       |
 | Relaxer         | <a href="https://curioustushar.github.io/react-sample-projects/relaxer"> <img loading="lazy" src="docs/screenshots/relaxer.jpg" alt="relaxer" width="200px" /></a>                         | [Relaxer](./relaxer)                 |
 | Sortable List   | <a href="https://curioustushar.github.io/react-sample-projects/sortable-list"> <img loading="lazy" src="docs/screenshots/sortable.jpg" alt="sortable" width="200px" /></a>                 | [Sortable List](./sortable-list)     |
+| Digital Clock   | <a href="https://curioustushar.github.io/react-sample-projects/digital-clock"> <img loading="lazy" src="docs/screenshots/digital-clock.jpg" alt="sortable" width="200px" /></a>                 | [Digital Clock](./digital-clock)     |
 
 ## TODO
 
-- \[ ] Improve Docs
 - \[ ] Improve Testing
 - \[ ] Form Validator
 - \[ ] Movie Seat Booking | DOM & Local Storage
-- \[ ] Relaxer App | CSS Animations
+- \[x] Relaxer App | CSS Animations
 - \[ ] Exchange Rate Calculator
-- \[ ] Sortable List | Drag & Drop API
+- \[x] Sortable List | Drag & Drop API
+- \[x] Digital Clock
 
 ## Contributing
 
@@ -76,6 +77,8 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 Feel free to reach out to me through [@curioustushar](https://twitter.com/curioustushar) if you have any questions or feedback! 😊
 
-## Thanks & Credits
+## Thanks & Credits### `demo`
+
+<img src="./app.gif" />
 
 Idea / Concepts is take from [javascript-basic-projects](https://github.com/john-smilga/javascript-basic-projects).

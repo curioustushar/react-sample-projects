@@ -74,3 +74,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## Thanks & Credits
 
 Idea / Concepts is take from [Digital Clock - React](https://codepen.io/matthewvincent/pen/BKoYLm).
+
+Font - [Ds-Digital](https://www.dafont.com/ds-digital.font)

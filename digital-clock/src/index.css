@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
 
+@font-face {
+  font-family: 'ds-digital';
+  src: local('ds-digital'), url(./font/DS-DIGIB.TTF);
+}
+
 body {
   font-family: 'roboto';
   font-weight: 400;
@@ -111,10 +116,11 @@ body {
 
 .time {
   /* color: white; */
-  font-size: 60px;
+  font-family: 'ds-digital';
+  font-size: 70px;
   position: relative;
   display: block;
-  margin-top: 45px;
+  margin-top: 50px;
   cursor: pointer;
   transition: all 0.2s linear;
 }

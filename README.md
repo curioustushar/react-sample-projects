@@ -77,8 +77,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 
 Feel free to reach out to me through [@curioustushar](https://twitter.com/curioustushar) if you have any questions or feedback! 😊
 
-## Thanks & Credits### `demo`
-
-<img src="./app.gif" />
+## Thanks & Credits
 
 Idea / Concepts is take from [javascript-basic-projects](https://github.com/john-smilga/javascript-basic-projects).
+

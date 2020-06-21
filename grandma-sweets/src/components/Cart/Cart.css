@@ -1,0 +1,104 @@
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+.empty-cart {
+  text-align: center;
+  padding: 1rem;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+.cart {
+  position: fixed;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  transition: all 0.3s ease-in-out;
+  width: 300px;
+  padding: 1.5rem 0;
+  transform: rotateY(-360deg);
+  z-index: 1;
+  top: 67px;
+  right: 5px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+  padding: 1em 1.5rem;
+  border-bottom: 1px solid #d4d4d4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.cart-item .item-text {
+  display: block;
+  padding: 0;
+  font-size: 1rem;
+}
+.cart-item .item-text p {
+  margin: 0;
+}
+.cart-item:hover {
+  background-color: #d4d4d4;
+}
+.cart-item-remove {
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+.cart-buttons-container {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+}
+#cart-item-price {
+  font-size: 0.8rem;
+}
+.cart-total-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+.btn-pink {
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover,
+.btn-black.active {
+  color: var(--mainPink) !important;
+  background: var(--mainBlack) !important;
+}
+
+.btn-pink:hover {
+  background: var(--mainPink) !important;
+  color: var(--mainBlack) !important;
+}

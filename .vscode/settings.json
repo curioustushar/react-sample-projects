@@ -15,5 +15,6 @@
   "editor.formatOnPaste": true,
   "prettier.eslintIntegration": true,
   "prettier.trailingComma": "all",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "liveServer.settings.port": 5501
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Avengers: Endgame",
+    "price": 10,
+    "backgroundColor": "#1a1e46",
+    "seats": {
+      "row": 6,
+      "col": 9
+    }
+  },
+  {
+    "id": 2,
+    "name": "Joker",
+    "price": 12,
+    "backgroundColor": "#240603",
+    "seats": {
+      "row": 8,
+      "col": 7
+    }
+  },
+  {
+    "id": 3,
+    "name": "Toy Story 4",
+    "price": 8,
+    "backgroundColor": "#3a1619",
+    "seats": {
+      "row": 10,
+      "col": 10
+    }
+  },
+  {
+    "id": 4,
+    "name": "The Lion King",
+    "price": 9,
+    "backgroundColor": "#867719",
+    "seats": {
+      "row": 6,
+      "col": 10
+    }
+  }
+]

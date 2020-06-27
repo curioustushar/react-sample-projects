@@ -1,17 +1,18 @@
 import React, { useContext } from 'react';
 import './Cart.css';
 import { StoreContext } from './../StoreContextProvider/StoreContextProvider';
+import CartItem from './CartItem';
 
 const Cart = ({ onToggleCart }) => {
-  const [cart, , removeItemToCart, emptyCart] = useContext(StoreContext);
+  const [cart, , removeItemToCart, updateQuantity, emptyCart] = useContext(
+    StoreContext,
+  );
   const totalPrice = cart.items.reduce(
     (acc, a) => acc + a.quantity * parseInt(a.price),
     0,
   );
-  const removeItem = (e, item) => {
-    e.preventDefault();
+  const removeItem = (item) => {
     removeItemToCart(item);
-    console.log(item);
   };
   const clearCart = (e) => {
     e.preventDefault();
@@ -26,22 +27,12 @@ const Cart = ({ onToggleCart }) => {
   return (
     <div className="cart">
       {cart.items.map((item) => (
-        <div key={item.id} className="cart-item ">
-          <img src={item.src} alt={item.name} />
-          <div className="item-text">
-            <p className="font-weight-bold mb-0">{item.name}</p>
-            {item.quantity} * <span>$&nbsp;</span>
-            <span className="cart-item-price">{item.price}</span>
-          </div>
-          <a
-            href="/"
-            className="cart-item-remove"
-            title="remove"
-            onClick={(e) => removeItem(e, item)}
-          >
-            <i className="fas fa-trash"></i>
-          </a>
-        </div>
+        <CartItem
+          key={item.id}
+          item={item}
+          onDelete={removeItem}
+          onUpdateQuantity={(e) => updateQuantity({ ...item, quantity: e })}
+        />
       ))}
       {cart.items && cart.items.length ? (
         <>

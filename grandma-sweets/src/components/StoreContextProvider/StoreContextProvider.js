@@ -34,6 +34,15 @@ const StoreContextProvider = (props) => {
     setCart({ ...cart, items });
     playSound();
   };
+  const updateQuantity = (item) => {
+    const items = [...cart.items];
+    const foundIndex = items.findIndex((i) => i.id === item.id);
+    if (foundIndex > -1) {
+      items[foundIndex].quantity = item.quantity;
+    }
+    setCart({ ...cart, items });
+    playSound();
+  };
   const removeItemToCart = (item) => {
     const items = [...cart.items];
     const foundIndex = items.findIndex((i) => i.id === item.id);
@@ -42,7 +51,7 @@ const StoreContextProvider = (props) => {
   };
   return (
     <StoreContext.Provider
-      value={[cart, addItemToCart, removeItemToCart, emptyCart]}
+      value={[cart, addItemToCart, removeItemToCart, updateQuantity, emptyCart]}
     >
       {props.children}
     </StoreContext.Provider>

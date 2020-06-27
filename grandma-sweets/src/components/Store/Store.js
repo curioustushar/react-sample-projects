@@ -111,9 +111,10 @@ const Store = () => {
   };
   const handelSearch = (text) => {
     const items = itemList.filter((item) =>
-      item.name.toLowerCase().includes(text.toLowerCase())
+      item.name.toLowerCase().includes(text.toLowerCase()),
     );
     setStoreItems(items);
+    setFilter('all');
   };
 
   const handelFilters = (type) => {

@@ -17,7 +17,7 @@ const CartItem = ({ item, onDelete, onUpdateQuantity }) => {
   };
   return (
     <div key={item.id} className="cart-item ">
-      <img src={item.src} alt={item.name} />
+      <img src={item.src} loading="lazy" alt={item.name} />
       <div className="item-text">
         <p className="font-weight-bold mb-0">{item.name}</p>
         {item.quantity} * <span>$&nbsp;</span>

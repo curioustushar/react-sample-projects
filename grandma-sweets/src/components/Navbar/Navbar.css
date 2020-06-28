@@ -10,6 +10,7 @@ ul {
   top: 0;
   width: 100%;
   background: var(--mainWhite);
+  box-sizing: border-box;
   box-shadow: 0px 3px 1px 0px var(--mainGrey);
 }
 .mobile-navbar {
@@ -78,6 +79,7 @@ i.fas {
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
+  padding-right: 0;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;

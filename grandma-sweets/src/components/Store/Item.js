@@ -12,7 +12,12 @@ function Item({ item, onClick }) {
     <a href="/" onClick={onClick}>
       <div className={`store-item ${item.type}`}>
         <div className="img-container">
-          <img src={item.src} className="store-img" alt={item.name} />
+          <img
+            src={item.src}
+            loading="lazy"
+            className="store-img"
+            alt={item.name}
+          />
           <span className="store-item-icon" onClick={addToCart}>
             <i className="fas fa-shopping-cart"></i>
           </span>

@@ -26,7 +26,12 @@ const About = () => {
         </div>
         <div className="align-self-center">
           <div className="about-img__container">
-            <img src="img/sweets-1.jpeg" className="img-fluid" alt="" />
+            <img
+              src="img/sweets-1.jpeg"
+              loading="lazy"
+              className="img-fluid"
+              alt=""
+            />
           </div>
         </div>
       </section>

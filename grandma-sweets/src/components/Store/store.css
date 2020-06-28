@@ -24,12 +24,12 @@ h5 {
 .sortBtn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0 auto;
   max-width: 100%;
 }
 .filter-btn {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .item-text {
   text-transform: capitalize;
@@ -118,6 +118,9 @@ h5 {
   .sortBtn,
   .search-input {
     width: 100%;
+  }
+  .sortBtn {
+    justify-content: space-between;
   }
 }
 

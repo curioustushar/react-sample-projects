@@ -16,21 +16,22 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <main style={{ backgroundColor: color }}>
-        <div className="container">
-          <h2>
-            background color : <span className="color">{color}</span>
-          </h2>
-          <button className="btn btn-hero" onClick={changeColor}>
-            Change Color
-          </button>
-          <button className="btn btn-hero" onClick={setHexColor}>
-            Set Hex Color
-          </button>
-        </div>
-      </main>
-    </div>
+    <main style={{ backgroundColor: color }}>
+      <div className="container">
+        <h2>
+          background color :{' '}
+          <span className="color" data-testid="color">
+            {color}
+          </span>
+        </h2>
+        <button className="btn btn-hero" onClick={changeColor}>
+          Change Color
+        </button>
+        <button className="btn btn-hero" onClick={setHexColor}>
+          Set Hex Color
+        </button>
+      </div>
+    </main>
   );
 }
 

@@ -33,6 +33,7 @@
 p.text {
   margin: 5px 10px;
   padding-bottom: 10px;
+  min-width: 320px;
 }
 
 p.text span {

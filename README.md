@@ -32,14 +32,16 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Digital Clock      | <a href="https://curioustushar.github.io/react-sample-projects/digital-clock"> <img loading="lazy" src="docs/screenshots/digital-clock.jpg" alt="sortable" width="200px" /></a>                     | [Digital Clock](./digital-clock)           |
 | Grandma's Sweets   | <a href="https://curioustushar.github.io/react-sample-projects/grandma-sweets"> <img loading="lazy" src="docs/screenshots/grandma-sweets.jpg" alt="grandma-sweets" width="200px" /></a>             | [Grandma's Sweets](./grandma-sweets)       |
 | Movie Seat Booking | <a href="https://curioustushar.github.io/react-sample-projects/movie-seat-booking"> <img loading="lazy" src="docs/screenshots/movie-seat-booking.jpg" alt="movie-seat-booking" width="200px" /></a> | [Movie Seat Booking](./movie-seat-booking) |
+| Expense Tracker    | <a href="https://curioustushar.github.io/react-sample-projects/expense-tracker"> <img loading="lazy" src="docs/screenshots/expense-tracker.jpg" alt="expense-tracker" width="200px" /></a>          | [Expense Tracker](./expense-tracker)       |
 
 ## TODO
 
 - \[ ] Improve Testing
 - \[ ] Form Validator
-- \[ ] Movie Seat Booking | DOM & Local Storage
+- \[x] Movie Seat Booking | DOM & Local Storage
+- \[x] Expense Tracker | DOM & Local Storage
 - \[x] Relaxer App | CSS Animations
-- \[ ] Exchange Rate Calculator
+- \[] Exchange Rate Calculator
 - \[x] Sortable List | Drag & Drop API
 - \[x] Digital Clock
 
@@ -81,4 +83,7 @@ Feel free to reach out to me through [@curioustushar](https://twitter.com/curiou
 
 ## Thanks & Credits
 
-Idea / Concepts is take from [javascript-basic-projects](https://github.com/john-smilga/javascript-basic-projects).
+Idea / Concepts is take from
+
+- [javascript-basic-projects](https://github.com/john-smilga/javascript-basic-projects).
+- [vanillawebprojects](https://github.com/bradtraversy/vanillawebprojects).

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
+import gameUtils from '../../utils/game';
 import './game.css';
-import gameUtils from '../utils/game';
 
 const Game = () => {
   const canvasRef = useRef('canvas');
@@ -9,11 +9,7 @@ const Game = () => {
     gameUtils.init(canvasRef);
   }, []);
 
-  return (
-    <div>
-      <canvas id="canvas" ref={canvasRef} width="800" height="500"></canvas>
-    </div>
-  );
+  return <canvas id="canvas" ref={canvasRef} width="800" height="500"></canvas>;
 };
 
 export default Game;

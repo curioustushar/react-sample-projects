@@ -1,4 +1,5 @@
 import scoreUtils from '../utils/score';
+
 const scoreBoard = {
   level: 1,
   score: 0,

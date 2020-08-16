@@ -33,6 +33,7 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Grandma's Sweets   | <a href="https://curioustushar.github.io/react-sample-projects/grandma-sweets"> <img loading="lazy" src="docs/screenshots/grandma-sweets.jpg" alt="grandma-sweets" width="200px" /></a>             | [Grandma's Sweets](./grandma-sweets)       |
 | Movie Seat Booking | <a href="https://curioustushar.github.io/react-sample-projects/movie-seat-booking"> <img loading="lazy" src="docs/screenshots/movie-seat-booking.jpg" alt="movie-seat-booking" width="200px" /></a> | [Movie Seat Booking](./movie-seat-booking) |
 | Expense Tracker    | <a href="https://curioustushar.github.io/react-sample-projects/expense-tracker"> <img loading="lazy" src="docs/screenshots/expense-tracker.jpg" alt="expense-tracker" width="200px" /></a>          | [Expense Tracker](./expense-tracker)       |
+| Breakout Game      | <a href="https://curioustushar.github.io/react-sample-projects/breakout-game"> <img loading="lazy" src="docs/screenshots/breakout-game.jpg" alt="breakout-game" width="200px" /></a>                | [Breakout Game](./breakout-game)           |
 
 ## TODO
 
@@ -41,9 +42,10 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 - \[x] Movie Seat Booking | DOM & Local Storage
 - \[x] Expense Tracker | DOM & Local Storage
 - \[x] Relaxer App | CSS Animations
-- \[] Exchange Rate Calculator
+- \[x] Exchange Rate Calculator
 - \[x] Sortable List | Drag & Drop API
 - \[x] Digital Clock
+- \[x] Breakout Game | Canvas & Local Storage
 
 ## Contributing
 

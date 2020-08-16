@@ -35,7 +35,7 @@ const AddTransaction = (props) => {
           <label htmlFor="text">Label</label>
           <input
             type="text"
-            id="text"
+            maxLength="10"
             required
             value={label}
             onChange={(e) => setLabel(e.target.value.trim())}
@@ -50,6 +50,8 @@ const AddTransaction = (props) => {
           <input
             type="number"
             id="amount"
+            max="9999"
+            min="-9999"
             required
             value={amount}
             onChange={(e) => setAmount(e.target.value)}

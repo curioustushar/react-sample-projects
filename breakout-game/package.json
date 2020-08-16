@@ -1,5 +1,5 @@
 {
-  "name": "expense-tracker",
+  "name": "breakout-game",
   "version": "0.1.0",
   "homepage": "./",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",

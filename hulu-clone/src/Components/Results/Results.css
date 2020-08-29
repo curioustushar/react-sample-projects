@@ -1,0 +1,17 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.results > div {
+  overflow: hidden;
+}
+code.error {
+  display: block;
+  padding: 1em;
+  margin: 1em;
+  background-color: #ffffff;
+  color: #f00000;
+  line-height: 1.5;
+}

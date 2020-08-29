@@ -1,0 +1,44 @@
+.card {
+  color: white;
+  max-width: 500px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
+
+.card:hover > .card__stats {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.card > img {
+  object-fit: contain;
+  max-width: 500px;
+  width: 100%;
+  height: 300px;
+}
+
+.card > h2 {
+  padding-top: 10px;
+}
+
+.card__stats {
+  display: none;
+}
+
+.card .overview {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card__stats > svg {
+  width: 1em;
+  height: 1em;
+  font-size: 30px;
+}

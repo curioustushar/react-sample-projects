@@ -27,6 +27,14 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `Demo`
+
+<img src="./hulu-demo.gif" alt="hulu-clone" />
+
+### `Inspired`
+
+https://www.youtube.com/watch?v=du_FuBTrclo&t=3933s
+
 ### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

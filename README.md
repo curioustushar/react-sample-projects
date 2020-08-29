@@ -34,6 +34,7 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | Movie Seat Booking | <a href="https://curioustushar.github.io/react-sample-projects/movie-seat-booking"> <img loading="lazy" src="docs/screenshots/movie-seat-booking.jpg" alt="movie-seat-booking" width="200px" /></a> | [Movie Seat Booking](./movie-seat-booking) |
 | Expense Tracker    | <a href="https://curioustushar.github.io/react-sample-projects/expense-tracker"> <img loading="lazy" src="docs/screenshots/expense-tracker.jpg" alt="expense-tracker" width="200px" /></a>          | [Expense Tracker](./expense-tracker)       |
 | Breakout Game      | <a href="https://curioustushar.github.io/react-sample-projects/breakout-game"> <img loading="lazy" src="docs/screenshots/breakout-game.jpg" alt="breakout-game" width="200px" /></a>                | [Breakout Game](./breakout-game)           |
+| Hulu Clone         | <a href="https://curioustushar.github.io/react-sample-projects/hulu-clone"> <img loading="lazy" src="docs/screenshots/hulu-clone.jpg" alt="hulu-clone" width="200px" /></a>                         | [Hulu Clone](./hulu-clone)                 |
 
 ## TODO
 
@@ -75,7 +76,7 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
         <sub><b>Mani Kiran N</b></sub></a><br />
         <a href="#" title="Code">💻 </a>
         <a href="#" title="Documentation">📖</a>
-        <a href="#" title="Ideas">🤔</a>  
+        <a href="#" title="Ideas">🤔</a>
         <a href="#" title="Maintenance">🚧 </a>
     </td>
   </tr>

@@ -2,6 +2,7 @@
   "name": "hulu-clone",
   "version": "0.1.0",
   "homepage": "./",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.20.0",
     "react": "^16.13.1",

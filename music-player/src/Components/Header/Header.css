@@ -1,0 +1,24 @@
+.top-nav {
+  background: rgba(123, 34, 40, 0.8);
+  border-bottom: 2px;
+  padding: 10px;
+  color: #ffffff;
+  height: 44px;
+}
+
+.top-nav .fa-long-arrow-alt-left {
+  margin-right: 5px;
+}
+
+.top-nav .fa-list {
+  font-size: 20px;
+}
+
+.top-nav .fa {
+  font-size: 1.2em/1.5em;
+}
+
+.list-songs {
+  line-height: 32px;
+  float: right;
+}

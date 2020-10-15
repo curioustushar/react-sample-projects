@@ -1,0 +1,49 @@
+.album-info {
+  padding: 0 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 50px;
+  opacity: 0.8;
+}
+
+.grid {
+  float: left;
+  padding: 0 10px;
+}
+
+.grid .fa {
+  font-size: 20px;
+  line-height: 45px;
+}
+
+.grid small {
+  margin-top: -4px;
+}
+
+.grid p,
+.grid small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inherit;
+  white-space: nowrap;
+}
+.song-title {
+  color: rgba(123, 34, 40, 0.8) !important;
+  opacity: 1;
+}
+
+.loop-songs {
+  position: relative;
+}
+
+.loop-songs .fa {
+  font-size: 24px;
+}
+
+.loop-songs small {
+  font: 9px Arial, sans-serif;
+  position: absolute;
+  color: rgb(123, 34, 40);
+  top: 50%;
+  margin-left: 7px;
+}

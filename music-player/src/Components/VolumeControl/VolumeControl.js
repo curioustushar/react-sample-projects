@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../AppContextProvider';
 import './VolumeControl.css';
 
@@ -15,10 +15,20 @@ export const VolumeControl = () => {
     } else if (playerVolume > 0.6) {
       setValueIcon('fa-volume-up');
     }
-    dispatch({ type: 'setVolume', payload: { playerVolume } });
+    if (state.playerVolume !== playerVolume) {
+      dispatch({ type: 'setVolume', payload: { playerVolume } });
+    }
   };
-
-  setVolume(state.playerVolume);
+  useEffect(() => {
+    setVolume(state.playerVolume);
+    setTimeout(() => {
+      dispatch({
+        type: 'showVolumeControl',
+        payload: { isVolumeControl: !state.isVolumeControl },
+      });
+    }, 2500);
+    return () => {};
+  }, [state.playerVolume]);
 
   return (
     <div className="volumeControl">

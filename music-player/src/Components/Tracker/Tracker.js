@@ -26,6 +26,7 @@ export const Tracker = () => {
     <div className="tracker clearfix">
       <AudioPlayer
         currentSongName={state.currentSong.name}
+        volume={state.playerVolume}
         isPlaying={state.isSongPlaying}
         onTimeUpdate={onTimeUpdateHandler}
         defaultTime={tracker.defaultTime}

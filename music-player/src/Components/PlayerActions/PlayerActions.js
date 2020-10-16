@@ -17,7 +17,7 @@ export const PlayerActions = () => {
             })
           }
         >
-          <i className="fa fa-volume-up"></i>
+          <i className={`fa ${state.volumeIcon}`}></i>
         </a>
         <a
           href="#"

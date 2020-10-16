@@ -10,6 +10,7 @@ const appState = {
   currentView: 'musicPlayer',
   playerVolume: 0.4,
   isVolumeControl: false,
+  volumeIcon: 'fa-volume-down',
   action: '',
 };
 const getRandomIndex = (songs = []) => {
@@ -79,11 +80,12 @@ function playerReducer(state, action) {
       return { ...state, currentView };
     }
     case 'setVolume': {
-      const { playerVolume } = action.payload;
+      const { playerVolume, volumeIcon } = action.payload;
 
       return {
         ...state,
         playerVolume,
+        volumeIcon,
       };
     }
     case 'showVolumeControl': {

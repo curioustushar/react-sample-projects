@@ -1,27 +1,44 @@
 import React, { useState, useEffect } from 'react';
 import { useAppContext } from '../../AppContextProvider';
 import './VolumeControl.css';
-
+let timeoutHandle;
 export const VolumeControl = () => {
   const { state, dispatch } = useAppContext();
-  const [volumeIcon, setValueIcon] = useState('fa-volume-down');
 
   const setVolume = (e = 0.0) => {
+    let icon = state.volumeIcon;
     let playerVolume = Number(e);
     if (playerVolume === 0.0) {
-      setValueIcon('fa-volume-off');
+      icon = 'fa-volume-off';
     } else if (playerVolume > 0.2 && playerVolume < 0.6) {
-      setValueIcon('fa-volume-down');
+      icon = 'fa-volume-down';
     } else if (playerVolume > 0.6) {
-      setValueIcon('fa-volume-up');
+      icon = 'fa-volume-up';
     }
     if (state.playerVolume !== playerVolume) {
-      dispatch({ type: 'setVolume', payload: { playerVolume } });
+      setTimeout(() => {
+        dispatch({
+          type: 'setVolume',
+          payload: { playerVolume, volumeIcon: icon },
+        });
+      }, 0);
     }
   };
+
+  const onMouseEnter = (e) => {
+    clearTimeout(timeoutHandle);
+  };
+
+  const onMouseLeave = (e) => {
+    dispatch({
+      type: 'showVolumeControl',
+      payload: { isVolumeControl: !state.isVolumeControl },
+    });
+  };
+
   useEffect(() => {
     setVolume(state.playerVolume);
-    setTimeout(() => {
+    timeoutHandle = setTimeout(() => {
       dispatch({
         type: 'showVolumeControl',
         payload: { isVolumeControl: !state.isVolumeControl },
@@ -31,8 +48,12 @@ export const VolumeControl = () => {
   }, [state.playerVolume]);
 
   return (
-    <div className="volumeControl">
-      <i className={`fas ${volumeIcon}`}></i>
+    <div
+      className="volumeControl"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <i className={`fas ${state.volumeIcon}`}></i>
       <input
         type="range"
         name="volume"

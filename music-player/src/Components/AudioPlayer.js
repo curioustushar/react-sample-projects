@@ -43,7 +43,9 @@ function AudioPlayerComp(props) {
   const updateSource = () => {
     const node = getDOMNode();
 
-    node.pause();
+    if (node.paused === false && node.readyState) {
+      node.pause(); //pause if playing
+    }
     props.onTimeUpdate({
       currentTime: 0,
       trackDuration: node.duration,
@@ -51,31 +53,31 @@ function AudioPlayerComp(props) {
 
     node.load();
     if (props.isPlaying) {
-      node.play();
+      node.readyState && node.play();
     }
   };
-
+  const setAudioInfo = (key, value) => {
+    if (audioInfo.current) {
+      audioInfo.current[key] = value;
+    } else {
+      audioInfo.current = {
+        ...audioInfo.current,
+        [key]: value,
+      };
+    }
+  };
   useEffect(() => {
     if (getDOMNode()?.songName !== props.currentSongName) {
       updateSource();
-      audioInfo.current = {
-        ...audioInfo.current,
-        songName: props.currentSongName,
-      };
+      setAudioInfo('songName', props.currentSongName);
     }
     if (getDOMNode()?.isPlaying !== props.isPlaying) {
       updateIsPlaying();
-      audioInfo.current = {
-        ...audioInfo.current,
-        isPlaying: props.isPlaying,
-      };
+      setAudioInfo('isPlaying', props.isPlaying);
     }
     if (getDOMNode()?.defaultTime !== props.defaultTime) {
       updateCurrentTime();
-      audioInfo.current = {
-        ...audioInfo.current,
-        defaultTime: props.defaultTime,
-      };
+      setAudioInfo('defaultTime', props.defaultTime);
     } else {
       const node = getDOMNode();
       node.addEventListener('timeupdate', handleTimeUpdate);
@@ -88,7 +90,7 @@ function AudioPlayerComp(props) {
       node.removeEventListener('timeupdate', handleTimeUpdate);
       node.removeEventListener('ended', handleMediaEnd);
     };
-  }, [props.isPlaying, props.defaultTime, props.songName]);
+  }, [props.isPlaying, props.defaultTime, props.songName, props.volume]);
 
   return (
     <audio ref={audioRef}>

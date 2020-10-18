@@ -18,13 +18,6 @@ a {
   text-decoration: none;
 }
 
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: '';
-  clear: both;
-}
-
 .container {
   width: 100%;
   min-height: 100vh;
@@ -49,29 +42,6 @@ small {
   height: 450px;
 }
 
-.album-cover {
-  text-align: center;
-}
-
-.album-cover img {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  object-fit: contain;
-  padding-top: 1rem;
-}
-
-input[type='checkbox'] {
-  display: none;
-}
-
-.w10p {
-  width: 10%;
-}
-
-.w90p {
-  width: 90%;
-}
 @media screen and (max-width: 640px) {
   .music-player {
     width: 100%;

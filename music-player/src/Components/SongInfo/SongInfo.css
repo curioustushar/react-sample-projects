@@ -1,32 +1,29 @@
 .album-info {
   padding: 0 10px;
-  text-overflow: ellipsis;
-  overflow: hidden;
   height: 50px;
   opacity: 0.8;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.grid {
-  float: left;
-  padding: 0 10px;
-}
-
-.grid .fa {
+.album-info .fa {
   font-size: 20px;
   line-height: 45px;
 }
-
-.grid small {
-  margin-top: -4px;
+.album-info .artist {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  opacity: 0.8;
 }
 
-.grid p,
-.grid small {
+.album-info p {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: inherit;
   white-space: nowrap;
 }
+
 .song-title {
   color: rgba(123, 34, 40, 0.8) !important;
   opacity: 1;

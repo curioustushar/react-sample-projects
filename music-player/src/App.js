@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Header } from './Components/Header/Header';
-import { Tracker } from './Components/Tracker/Tracker';
-import { SongInfo } from './Components/SongInfo/SongInfo';
-import { VolumeControl } from './Components/VolumeControl/VolumeControl';
 
-import { PlayerActions } from './Components/PlayerActions/PlayerActions';
 import { PlayListView } from './Components/PlayListView/PlayListView';
-import { getSongInfo } from './musicService';
+import { getSongInfo, loadScriptFile } from './musicService';
 import { useAppContext } from './AppContextProvider';
 import { cover, playlistsongs } from './config';
+import { PlayerView } from './Components/PlayerView/PlayerView';
 import './App.css';
 
 function App() {
@@ -16,53 +13,47 @@ function App() {
   const { state, dispatch } = useAppContext();
   const [navHeading, setHeading] = useState('');
 
+  const setData = (songs) => {
+    if (!songs || songs.length === 0) return;
+    if (!navHeading) setHeading(songs[0].album);
+    if (Object.keys(state.currentSong).length === 0) {
+      dispatch({
+        type: 'setCurrentSong',
+        payload: {
+          ...songs[0],
+          cover,
+        },
+      });
+    }
+  };
+
   useEffect(() => {
     if (document.querySelector('#id3')) {
       dispatch({ type: 'setSongs', payload: playList?.current });
       return;
     }
-    const script = document.createElement('script');
-    script.src = '/assets/id3-minimized.js';
-    script.id = 'id3';
-    script.onload = () => {
+
+    loadScriptFile().then(() => {
       getSongInfo(playlistsongs).then((songs) => {
         playList.current = songs;
         dispatch({ type: 'setSongs', payload: songs });
-
-        if (songs && songs.length > 0) {
-          if (!navHeading) setHeading(songs[0].album);
-          if (Object.keys(state.currentSong).length === 0) {
-            dispatch({
-              type: 'setCurrentSong',
-              payload: {
-                ...songs[0],
-                cover,
-              },
-            });
-          }
-        }
+        setData(songs);
       });
-    };
-    document.body.appendChild(script);
+    });
 
     return () => {};
   }, [playList?.current]);
+
   return (
     <div className="container">
       <div className="music-player">
-        <Header Heading={navHeading} currentView={state.currentView} />
+        <Header Heading={navHeading} />
         {state.currentView === 'musicPlayer' && (
-          <div className="album-cover">
-            <img
-              src={state.currentSong.cover}
-              alt={state.currentSong.name}
-              id="cover"
-            />
-            <Tracker />
-            <SongInfo currentSong={state.currentSong} />
-            <PlayerActions />
-            {state.isVolumeControl && <VolumeControl />}
-          </div>
+          <PlayerView
+            cover={state.currentSong.cover}
+            name={state.currentSong.name}
+            isVolumeControl={state.isVolumeControl}
+          />
         )}
         {state.currentView === 'PlayList' && (
           <PlayListView

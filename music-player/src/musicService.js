@@ -23,3 +23,13 @@ export const getSongInfo = (playlistsongs, index = 0) => {
     processData(index);
   });
 };
+
+export const loadScriptFile = () => {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/assets/id3-minimized.js';
+    script.id = 'id3';
+    script.onload = () => resolve();
+    document.body.appendChild(script);
+  });
+};

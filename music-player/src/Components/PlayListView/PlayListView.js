@@ -20,7 +20,7 @@ export const PlayListView = ({ album, currentSong, isSongPlaying }) => {
             >
               <div className="info">
                 <p className="song-title">{song.name}</p>
-                <small>{song.artist}</small>
+                <p className="artist">{song.artist}</p>
               </div>
               <div className="status">
                 {currentSong.name === song.name && isSongPlaying && (

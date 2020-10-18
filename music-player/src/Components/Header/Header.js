@@ -2,7 +2,7 @@ import React from 'react';
 import { useAppContext } from '../../AppContextProvider';
 import './Header.css';
 
-export const Header = ({ currentView, Heading, goBack, showPlayList }) => {
+export const Header = ({ Heading }) => {
   const { state, dispatch } = useAppContext();
 
   return (

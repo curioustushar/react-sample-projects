@@ -14,16 +14,19 @@
   border: 0;
 }
 
-.song-item .song-title,
-.song-item small {
+.song-item .artist {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  line-height: 1.1;
+}
+.song-item p {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: inherit;
   white-space: nowrap;
 }
 .song-item .info,
 .song-item .status {
-  padding: 0 5px;
+  padding: 5px;
 }
 
 .active,

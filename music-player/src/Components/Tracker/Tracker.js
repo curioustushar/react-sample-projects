@@ -23,7 +23,7 @@ export const Tracker = () => {
   };
 
   return (
-    <div className="tracker clearfix">
+    <div className="tracker">
       <AudioPlayer
         currentSongName={state.currentSong.name}
         volume={state.playerVolume}
@@ -32,7 +32,7 @@ export const Tracker = () => {
         defaultTime={tracker.defaultTime}
         onEnd={(e) => console.log('onEnd', e)}
       />
-      <div className="trackTimes clearfix">
+      <div className="trackTimes">
         {tracker.currentTime !== 0 && (
           <span className="currentTime">{tracker.currentTime}</span>
         )}

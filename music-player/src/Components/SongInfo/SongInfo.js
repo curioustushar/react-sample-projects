@@ -2,18 +2,17 @@ import React from 'react';
 import { useAppContext } from '../../AppContextProvider';
 import './SongInfo.css';
 
-export const SongInfo = ({ currentSong }) => {
+export const SongInfo = () => {
   const { state, dispatch } = useAppContext();
   return (
-    <div className="album-info clearfix">
-      {currentSong && (
-        <div className="grid w90p">
-          <span className="song-title">{currentSong.name}</span>
-          <br />
-          <small className="artist">{currentSong.artist}</small>
+    <div className="album-info">
+      {state.currentSong && (
+        <div className="">
+          <p className="song-title">{state.currentSong.name}</p>
+          <p className="artist">{state.currentSong.artist}</p>
         </div>
       )}
-      <div className="grid w10p loop-songs">
+      <div className="loop-songs">
         <a
           href="#"
           title="Album"

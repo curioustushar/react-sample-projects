@@ -6,7 +6,7 @@ export const PlayerActions = () => {
   const { state, dispatch } = useAppContext();
   return (
     <div className="player-actions">
-      <div className="player-controls clearfix">
+      <div className="player-controls ">
         <a
           href="#"
           title="Volume"

@@ -19,9 +19,8 @@ export const AddShapesToMap = () => {
         opacity={1}
         fillOpacity={0.8}
         dashArray={12}
-        radius={500}
         fillColor="cyan"
-        op
+        radius={500}
         center={position}
       />
     </Map>

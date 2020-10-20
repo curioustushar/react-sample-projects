@@ -11,21 +11,17 @@ L.Icon.Default.mergeOptions({
 });
 
 export const MapMarker = () => {
-  const state = {
-    lat: 28.7041,
-    lng: 77.1025,
-    zoom: 13,
-  };
-  const position = [state.lat, state.lng];
+  const position = [28.7041, 77.1025];
   return (
-    <Map center={position} zoom={state.zoom}>
+    <Map center={position} zoom={13}>
       <TileLayer
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
         <Popup>
-          A pretty CSS3 popup. <br /> Easily customizable.
+          Delhi - Rohtak Rd, near gagan chouraha, opposite water tank, <br />
+          Rohini, moradabad, Delhi 110085
         </Popup>
       </Marker>
     </Map>

@@ -5,6 +5,12 @@ import 'leaflet/dist/leaflet.css';
 import { MapMarker } from './Components/MapMarker';
 import { MapInterface } from './Components/MapInterface';
 import { AddShapesToMap } from './Components/AddShapesToMap';
+import { CustomZoomControl } from './Components/CustomZoomControl';
+import { AddGeoJSON } from './Components/AddGeoJSON';
+import { ChangeMapTile } from './Components/ChangeMapTile';
+import { OtherLayer } from './Components/OtherLayer';
+import { BrowserLocation } from './Components/BrowserLocation';
+
 const demoList = [
   {
     key: 'MapMarker',
@@ -18,9 +24,30 @@ const demoList = [
     key: 'MapInterface',
     label: 'Interface with the Map',
   },
+  {
+    key: 'CustomZoomControl',
+    label: 'Custom Zoom Control',
+  },
+  {
+    key: 'AddGeoJSON',
+    label: 'Add GeoJSON to the Map',
+  },
+  {
+    key: 'OtherLayer',
+    label: 'Other layers (LayerGroup, FeatureGroup)',
+  },
+  // {
+  //   key: 'ChangeMapTile',
+  //   label: 'ChangeMapTile',
+  // },
+  {
+    key: 'BrowserLocation',
+    label: 'Browser geo Location update',
+  },
 ];
 function App() {
   const [demo, setDemo] = useState('MapMarker');
+
   const getComponent = () => {
     switch (demo) {
       case 'MapMarker':
@@ -29,7 +56,16 @@ function App() {
         return <AddShapesToMap />;
       case 'MapInterface':
         return <MapInterface />;
-
+      case 'CustomZoomControl':
+        return <CustomZoomControl />;
+      case 'AddGeoJSON':
+        return <AddGeoJSON />;
+      case 'OtherLayer':
+        return <OtherLayer />;
+      case 'ChangeMapTile':
+        return <ChangeMapTile />;
+      case 'BrowserLocation':
+        return <BrowserLocation />;
       default:
         break;
     }

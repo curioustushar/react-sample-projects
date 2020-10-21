@@ -79,6 +79,15 @@ function playerReducer(state, action) {
       const { currentView } = action.payload;
       return { ...state, currentView };
     }
+    case 'playSong': {
+      const { song } = action.payload;
+      return {
+        ...state,
+        currentView: 'musicPlayer',
+        currentSong: { ...song, cover },
+        isSongPlaying: false,
+      };
+    }
     case 'setVolume': {
       const { playerVolume, volumeIcon } = action.payload;
 

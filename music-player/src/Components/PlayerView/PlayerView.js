@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { Tracker } from './../Tracker/Tracker';
 import { SongInfo } from './../SongInfo/SongInfo';
 import { VolumeControl } from './../VolumeControl/VolumeControl';
@@ -6,9 +6,9 @@ import './PlayerView.css';
 
 import { PlayerActions } from './../PlayerActions/PlayerActions';
 
-const PlayerViewComp = ({ name, cover, isVolumeControl }) => {
+export const PlayerView = ({ name, cover, isVolumeControl, className }) => {
   return (
-    <div className="album-cover">
+    <div className={`${className} album-cover`}>
       <img src={cover} alt={name} id="cover" />
       <Tracker />
       <SongInfo />
@@ -17,5 +17,3 @@ const PlayerViewComp = ({ name, cover, isVolumeControl }) => {
     </div>
   );
 };
-
-export const PlayerView = memo(PlayerViewComp);

@@ -5,6 +5,7 @@ import './Tracker.css';
 
 export const Tracker = () => {
   const { state } = useAppContext();
+  // console.log(state.currentSong.name, state.isSongPlaying, state.playerVolume);
   const [tracker, setTrack] = useState({ currentTime: 0, defaultTime: 0 });
 
   const onTimeUpdateHandler = (e) => {

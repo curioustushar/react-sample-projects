@@ -48,20 +48,18 @@ function App() {
     <div className="container">
       <div className="music-player">
         <Header Heading={navHeading} />
-        {state.currentView === 'musicPlayer' && (
-          <PlayerView
-            cover={state.currentSong.cover}
-            name={state.currentSong.name}
-            isVolumeControl={state.isVolumeControl}
-          />
-        )}
-        {state.currentView === 'PlayList' && (
-          <PlayListView
-            album={playList.current}
-            currentSong={state.currentSong}
-            isSongPlaying={state.isSongPlaying}
-          />
-        )}
+        <PlayerView
+          className={state.currentView === 'musicPlayer' ? '' : 'hide'}
+          cover={state.currentSong.cover}
+          name={state.currentSong.name}
+          isVolumeControl={state.isVolumeControl}
+        />
+        <PlayListView
+          className={state.currentView === 'PlayList' ? '' : 'hide'}
+          album={playList.current}
+          currentSong={state.currentSong}
+          isSongPlaying={state.isSongPlaying}
+        />
       </div>
     </div>
   );

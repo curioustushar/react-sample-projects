@@ -66,16 +66,22 @@ function AudioPlayerComp(props) {
       };
     }
   };
+
+  const getAudioInfo = () => {
+    return audioInfo?.current || {};
+  };
+
   useEffect(() => {
-    if (getDOMNode()?.songName !== props.currentSongName) {
+    // console.log(props);
+    if (getAudioInfo()?.songName !== props.currentSongName) {
       updateSource();
       setAudioInfo('songName', props.currentSongName);
     }
-    if (getDOMNode()?.isPlaying !== props.isPlaying) {
+    if (getAudioInfo()?.isPlaying !== props.isPlaying) {
       updateIsPlaying();
       setAudioInfo('isPlaying', props.isPlaying);
     }
-    if (getDOMNode()?.defaultTime !== props.defaultTime) {
+    if (getAudioInfo()?.defaultTime !== props.defaultTime) {
       updateCurrentTime();
       setAudioInfo('defaultTime', props.defaultTime);
     } else {

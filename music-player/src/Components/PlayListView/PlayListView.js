@@ -2,10 +2,18 @@ import React from 'react';
 import { useAppContext } from '../../AppContextProvider';
 import './PlayListView.css';
 
-export const PlayListView = ({ album, currentSong, isSongPlaying }) => {
+export const PlayListView = ({
+  album,
+  currentSong,
+  isSongPlaying,
+  className,
+}) => {
   const { dispatch } = useAppContext();
+  const playSelectedSong = (song) => {
+    dispatch({ type: 'playSong', payload: { song } });
+  };
   return (
-    <div className="player-back">
+    <div className={`${className} player-back`}>
       <div className="play-list">
         <ul>
           {album.map((song, index) => (
@@ -16,7 +24,7 @@ export const PlayListView = ({ album, currentSong, isSongPlaying }) => {
                   ? 'song-item active'
                   : 'song-item'
               }
-              onClick={() => dispatch({ type: 'setCurrentSong', currentSong })}
+              onClick={() => playSelectedSong(song)}
             >
               <div className="info">
                 <p className="song-title">{song.name}</p>

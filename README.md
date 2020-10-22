@@ -35,6 +35,8 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | 23  | Expense Tracker    | <a href="https://curioustushar.github.io/react-sample-projects/expense-tracker"> <img loading="lazy" src="docs/screenshots/expense-tracker.jpg" alt="expense-tracker" width="200px" /></a>          | [Expense Tracker](./expense-tracker)       |
 | 24  | Breakout Game      | <a href="https://curioustushar.github.io/react-sample-projects/breakout-game"> <img loading="lazy" src="docs/screenshots/breakout-game.jpg" alt="breakout-game" width="200px" /></a>                | [Breakout Game](./breakout-game)           |
 | 25  | Hulu Clone         | <a href="https://curioustushar.github.io/react-sample-projects/hulu-clone"> <img loading="lazy" src="docs/screenshots/hulu-clone.jpg" alt="hulu-clone" width="200px" /></a>                         | [Hulu Clone](./hulu-clone)                 |
+| 26  | Music Player       | <a href="https://curioustushar.github.io/react-sample-projects/music-player"> <img loading="lazy" src="docs/screenshots/music-player.jpg" alt="music-player" width="200px" /></a>                   | [Music Player](./music-player)             |
+| 27  | Leaflet Demos      | <a href="https://curioustushar.github.io/react-sample-projects/leaflet-demos"> <img loading="lazy" src="docs/screenshots/leaflet-demos.jpg" alt="leaflet-demos" width="200px" /></a>                | [Leaflet Demos](./leaflet-demos)           |
 
 ## TODO
 

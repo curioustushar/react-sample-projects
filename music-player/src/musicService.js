@@ -3,7 +3,7 @@ export const getSongInfo = (playlistsongs, index = 0) => {
 
   return new Promise((resolve, reject) => {
     function processData(index) {
-      let audioFile = '/assets/media/' + playlistsongs[index]?.name;
+      let audioFile = './assets/media/' + playlistsongs[index]?.name;
 
       window.ID3.loadTags(audioFile, function () {
         const tags = window.ID3.getAllTags(audioFile);
@@ -27,7 +27,7 @@ export const getSongInfo = (playlistsongs, index = 0) => {
 export const loadScriptFile = () => {
   return new Promise((resolve, reject) => {
     const script = document.createElement('script');
-    script.src = '/assets/id3-minimized.js';
+    script.src = './assets/id3-minimized.js';
     script.id = 'id3';
     script.onload = () => resolve();
     document.body.appendChild(script);

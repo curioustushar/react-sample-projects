@@ -33,6 +33,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* POKEMON APP
 =========================================== */
@@ -155,4 +159,11 @@ body {
   .container .pokemon__meta span {
     margin-bottom: 10px;
   }
+}
+
+.pokemondetail {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 16px;
 }

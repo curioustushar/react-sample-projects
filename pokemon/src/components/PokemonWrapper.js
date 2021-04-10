@@ -1,8 +1,9 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { useQuery } from '@apollo/react-hooks';
-import { GET_POKEMONS } from '../graphql/get-pokemons';
+import { GET_POKEMONS } from '../graphql';
 import { Pokemon } from './Pokemon';
+import { Link } from 'react-router-dom';
 
 export const PokemonWrapper = () => {
   const { loading, error, data } = useQuery(GET_POKEMONS, {
@@ -15,7 +16,9 @@ export const PokemonWrapper = () => {
   return (
     <div className="container pokemons">
       {data?.pokemons?.map((pokemon) => (
-        <Pokemon key={pokemon.id} pokemon={pokemon} />
+        <Link key={pokemon.id} to={`/pokemon/${pokemon.id}`}>
+          <Pokemon pokemon={pokemon} />
+        </Link>
       ))}
     </div>
   );

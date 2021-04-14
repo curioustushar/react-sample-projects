@@ -1,422 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The goal of this React Sample Projects repository is to provide a collection projects that simple and yet useful to get start your journey in react"
-    />
-    <title>React Sample Projects</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"
-    />
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
 
-      html,
-      body {
-        font-family: Roboto, 'Open Sans', serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="The goal of this React Sample Projects repository is to provide a collection projects that simple and yet useful to get start your journey in react" />
+  <title>React Sample Projects</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      main {
-        text-align: center;
-        max-width: 80%;
-        margin: 50px auto;
-      }
+    html,
+    body {
+      font-family: Roboto, 'Open Sans', serif;
+    }
 
-      a.fork-me {
-        margin-top: -50px;
-        right: 0;
-        position: fixed;
-      }
+    main {
+      text-align: center;
+      max-width: 80%;
+      margin: 50px auto;
+    }
 
-      a.fork-me img {
-        width: 149;
-        height: 149;
-      }
+    a.fork-me {
+      margin-top: -50px;
+      right: 0;
+      position: fixed;
+    }
 
-      a {
-        text-decoration: none;
-      }
+    a.fork-me img {
+      width: 149;
+      height: 149;
+    }
 
-      h1 {
-        margin: 32px 0;
-        font-size: 3em;
-      }
+    a {
+      text-decoration: none;
+    }
 
+    h1 {
+      margin: 32px 0;
+      font-size: 3em;
+    }
+
+    .project-list {
+      display: grid;
+      column-gap: 2em;
+      row-gap: 2em;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .product {
+      box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+        0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+      transition: transform 1s ease-in-out;
+    }
+
+    .product:hover {
+      transform: scale(0.9);
+    }
+
+    .product a {
+      display: block;
+    }
+
+    .product .product-image {
+      width: 100%;
+      height: 200px;
+    }
+
+    .product-title {
+      padding: 8px;
+      font-size: 1em;
+    }
+
+    @media screen and (max-width: 1200px) {
       .project-list {
-        display: grid;
-        column-gap: 2em;
-        row-gap: 2em;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 250px;
       }
+    }
 
-      .product {
-        box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
-          0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
-        transition: transform 1s ease-in-out;
+    @media screen and (max-width: 960px) {
+      .project-list {
+        grid-template-columns: 1fr 1fr;
+        height: 250px;
       }
+    }
 
-      .product:hover {
-        transform: scale(0.9);
+    @media screen and (max-width: 512px) {
+      .project-list {
+        grid-template-columns: 1fr;
       }
+    }
+  </style>
+</head>
 
-      .product a {
-        display: block;
-      }
-
-      .product .product-image {
-        width: 100%;
-        height: 200px;
-      }
-
-      .product-title {
-        padding: 8px;
-        font-size: 1em;
-      }
-
-      @media screen and (max-width: 1200px) {
-        .project-list {
-          grid-template-columns: 1fr 1fr 1fr;
-          height: 250px;
-        }
-      }
-
-      @media screen and (max-width: 960px) {
-        .project-list {
-          grid-template-columns: 1fr 1fr;
-          height: 250px;
-        }
-      }
-
-      @media screen and (max-width: 512px) {
-        .project-list {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <a
-      href="https://github.com/curioustushar/react-sample-projects"
-      class="fork-me"
-    >
-      <img
-        src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149"
-        class="attachment-full size-full"
-        alt="Fork me on GitHub"
-        data-recalc-dims="1"
-        role="navigation"
-      />
-    </a>
-    <main>
-      <h1>React Sample Projects</h1>
-      <div class="project-list">
-        <div class="product">
-          <a href="./color-flipper/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/color-flipper.jpg"
-              alt="Disco Color Flipper"
-            />
-            <div class="product-title">Color Flipper</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./counter/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/counter.jpg"
-              alt="Digi Counter"
-            />
-            <div class="product-title">Counter</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./reviews/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/reviews.jpg"
-              alt="multiple reviews"
-            />
-            <div class="product-title">Reviews</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./navbar/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/navbar.jpg"
-              alt="navigation bar"
-            />
-            <div class="product-title">Navbar</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./sidebar/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/sidebar.jpg"
-              alt="Toggle sidebar"
-            />
-            <div class="product-title">Sidebar</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./modal/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/modal.jpg"
-              alt="modal window"
-            />
-            <div class="product-title">Modal</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./questions/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/questions.jpg"
-              alt="General questions"
-            />
-            <div class="product-title">Questions</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./menu/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/menu.jpg"
-              alt="Hotel menu"
-            />
-            <div class="product-title">Menu</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./video/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/video.jpg"
-              alt="play video"
-            />
-            <div class="product-title">Video</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./scroll/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/scroll.jpg"
-              alt="scroll project"
-            />
-            <div class="product-title">Scroll</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./tabs/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/tabs.jpg"
-              alt="tab view"
-            />
-            <div class="product-title">Tabs</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./countdown-timer/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/countdown-timer.jpg"
-              alt="Digi Countdown Timer"
-            />
-            <div class="product-title">Countdown Timer</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./lorem-ipsum/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/lorem.jpg"
-              alt="lorem"
-            />
-            <div class="product-title">Lorem Ipsum</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./todo/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/todo.jpg"
-              alt="todo list"
-            />
-            <div class="product-title">Todo</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./slider/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/slider.jpg"
-              alt="image slider"
-            />
-            <div class="product-title">Slider</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./image-slider/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/image-slider.jpg"
-              alt="slider"
-            />
-            <div class="product-title">Image Slider</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./analog-clock/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/analog-clock.jpg"
-              alt="analog-clock"
-            />
-            <div class="product-title">Analog Clock</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./relaxer/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/relaxer.jpg"
-              alt="relax"
-            />
-            <div class="product-title">Relaxer</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./sortable-list/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/sortable.jpg"
-              alt="sortable"
-            />
-            <div class="product-title">Sortable List</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./digital-clock/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/digital-clock.jpg"
-              alt="digi clock"
-            />
-            <div class="product-title">Digital Clock</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./grandma-sweets/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/grandma-sweets.jpg"
-              alt="Sweets"
-            />
-            <div class="product-title">Grandma's sweets</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./movie-seat-booking/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/movie-seat-booking.jpg"
-              alt="Movie Booking"
-            />
-            <div class="product-title">Movie seat booking</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./expense-tracker/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/expense-tracker.jpg"
-              alt="Daily Expense Tracker"
-            />
-            <div class="product-title">Expense Tracker</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./breakout-game/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/breakout-game.jpg"
-              alt="Game"
-            />
-            <div class="product-title">Breakout Game</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./hulu-clone/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/hulu-clone.jpg"
-              alt="Hulu"
-            />
-            <div class="product-title">Hulu Clone</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./music-player/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/music-player.jpg"
-              alt="MP3 Player"
-            />
-            <div class="product-title">Music Player</div>
-          </a>
-        </div>
-        <div class="product">
-          <a href="./leaflet-demos/">
-            <img
-              loading="lazy"
-              class="product-image"
-              src="./screenshots/leaflet-demos.jpg"
-              alt="leaflet-demos"
-            />
-            <div class="product-title">Leaflet Demos</div>
-          </a>
-        </div>
+<body>
+  <a href="https://github.com/curioustushar/react-sample-projects" class="fork-me">
+    <img src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149"
+      class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" role="navigation" />
+  </a>
+  <main>
+    <h1>React Sample Projects</h1>
+    <div class="project-list">
+      <div class="product">
+        <a href="./color-flipper/">
+          <img loading="lazy" class="product-image" src="./screenshots/color-flipper.jpg" alt="Disco Color Flipper" />
+          <div class="product-title">Color Flipper</div>
+        </a>
       </div>
-    </main>
-  </body>
+      <div class="product">
+        <a href="./counter/">
+          <img loading="lazy" class="product-image" src="./screenshots/counter.jpg" alt="Digi Counter" />
+          <div class="product-title">Counter</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./reviews/">
+          <img loading="lazy" class="product-image" src="./screenshots/reviews.jpg" alt="multiple reviews" />
+          <div class="product-title">Reviews</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./navbar/">
+          <img loading="lazy" class="product-image" src="./screenshots/navbar.jpg" alt="navigation bar" />
+          <div class="product-title">Navbar</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./sidebar/">
+          <img loading="lazy" class="product-image" src="./screenshots/sidebar.jpg" alt="Toggle sidebar" />
+          <div class="product-title">Sidebar</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./modal/">
+          <img loading="lazy" class="product-image" src="./screenshots/modal.jpg" alt="modal window" />
+          <div class="product-title">Modal</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./questions/">
+          <img loading="lazy" class="product-image" src="./screenshots/questions.jpg" alt="General questions" />
+          <div class="product-title">Questions</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./menu/">
+          <img loading="lazy" class="product-image" src="./screenshots/menu.jpg" alt="Hotel menu" />
+          <div class="product-title">Menu</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./video/">
+          <img loading="lazy" class="product-image" src="./screenshots/video.jpg" alt="play video" />
+          <div class="product-title">Video</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./scroll/">
+          <img loading="lazy" class="product-image" src="./screenshots/scroll.jpg" alt="scroll project" />
+          <div class="product-title">Scroll</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./tabs/">
+          <img loading="lazy" class="product-image" src="./screenshots/tabs.jpg" alt="tab view" />
+          <div class="product-title">Tabs</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./countdown-timer/">
+          <img loading="lazy" class="product-image" src="./screenshots/countdown-timer.jpg"
+            alt="Digi Countdown Timer" />
+          <div class="product-title">Countdown Timer</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./lorem-ipsum/">
+          <img loading="lazy" class="product-image" src="./screenshots/lorem.jpg" alt="lorem" />
+          <div class="product-title">Lorem Ipsum</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./todo/">
+          <img loading="lazy" class="product-image" src="./screenshots/todo.jpg" alt="todo list" />
+          <div class="product-title">Todo</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./slider/">
+          <img loading="lazy" class="product-image" src="./screenshots/slider.jpg" alt="image slider" />
+          <div class="product-title">Slider</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./image-slider/">
+          <img loading="lazy" class="product-image" src="./screenshots/image-slider.jpg" alt="slider" />
+          <div class="product-title">Image Slider</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./analog-clock/">
+          <img loading="lazy" class="product-image" src="./screenshots/analog-clock.jpg" alt="analog-clock" />
+          <div class="product-title">Analog Clock</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./relaxer/">
+          <img loading="lazy" class="product-image" src="./screenshots/relaxer.jpg" alt="relax" />
+          <div class="product-title">Relaxer</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./sortable-list/">
+          <img loading="lazy" class="product-image" src="./screenshots/sortable.jpg" alt="sortable" />
+          <div class="product-title">Sortable List</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./digital-clock/">
+          <img loading="lazy" class="product-image" src="./screenshots/digital-clock.jpg" alt="digi clock" />
+          <div class="product-title">Digital Clock</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./grandma-sweets/">
+          <img loading="lazy" class="product-image" src="./screenshots/grandma-sweets.jpg" alt="Sweets" />
+          <div class="product-title">Grandma's sweets</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./movie-seat-booking/">
+          <img loading="lazy" class="product-image" src="./screenshots/movie-seat-booking.jpg" alt="Movie Booking" />
+          <div class="product-title">Movie seat booking</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./expense-tracker/">
+          <img loading="lazy" class="product-image" src="./screenshots/expense-tracker.jpg"
+            alt="Daily Expense Tracker" />
+          <div class="product-title">Expense Tracker</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./breakout-game/">
+          <img loading="lazy" class="product-image" src="./screenshots/breakout-game.jpg" alt="Game" />
+          <div class="product-title">Breakout Game</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./hulu-clone/">
+          <img loading="lazy" class="product-image" src="./screenshots/hulu-clone.jpg" alt="Hulu" />
+          <div class="product-title">Hulu Clone</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./music-player/">
+          <img loading="lazy" class="product-image" src="./screenshots/music-player.jpg" alt="MP3 Player" />
+          <div class="product-title">Music Player</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./leaflet-demos/">
+          <img loading="lazy" class="product-image" src="./screenshots/leaflet-demos.jpg" alt="leaflet-demos" />
+          <div class="product-title">Leaflet Demos</div>
+        </a>
+      </div>
+      <div class="product">
+        <a href="./pokemon/">
+          <img loading="lazy" class="product-image" src="./screenshots/pokemon-img.jpg" alt="pokemon-demo" />
+          <div class="product-title">Pokemon</div>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

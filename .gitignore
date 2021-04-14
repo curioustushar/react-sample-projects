@@ -108,5 +108,6 @@ dist
 links.txt
 
 deploy.sh
+deploy-single.sh
 
 .history

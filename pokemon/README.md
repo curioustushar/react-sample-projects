@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 ### `demo`
 
-<img src="./demo.png" />
+<img src="./demo.jpg" />
 
 ### `npm test`
 

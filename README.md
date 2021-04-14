@@ -37,7 +37,7 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | 25  | Hulu Clone         | <a href="https://curioustushar.github.io/react-sample-projects/hulu-clone"> <img loading="lazy" src="docs/screenshots/hulu-clone.jpg" alt="hulu-clone" width="200px" /></a>                         | [Hulu Clone](./hulu-clone)                 |
 | 26  | Music Player       | <a href="https://curioustushar.github.io/react-sample-projects/music-player"> <img loading="lazy" src="docs/screenshots/music-player.jpg" alt="music-player" width="200px" /></a>                   | [Music Player](./music-player)             |
 | 27  | Leaflet Demos      | <a href="https://curioustushar.github.io/react-sample-projects/leaflet-demos"> <img loading="lazy" src="docs/screenshots/leaflet-demos.jpg" alt="leaflet-demos" width="200px" /></a>                | [Leaflet Demos](./leaflet-demos)           |
-
+| 28  | Pokemon            | <a href="https://curioustushar.github.io/react-sample-projects/pokemon"> <img loading="lazy" src="docs/screenshots/pokemon-img.jpg" alt="Pokemon" width="200px" /></a>                | [Leaflet Demos](./pokemon)           |
 ## TODO
 
 - \[ ] Improve Testing

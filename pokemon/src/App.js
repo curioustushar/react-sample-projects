@@ -14,7 +14,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             <PokemonWrapper />
           </Route>
           <Route path="/pokemon/:id">

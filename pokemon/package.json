@@ -1,7 +1,7 @@
 {
   "name": "pokemon",
   "version": "0.1.0",
-  "homepage": "https://curioustushar.github.io/react-sample-projects/pokemon/",
+  "homepage": "./",
   "license": "MIT",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",

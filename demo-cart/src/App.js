@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Box, theme } from '@chakra-ui/react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
 import ProductDetails from './components/ProductDetails';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Router>
+        <Router hashType="slash">
           <ChakraProvider theme={theme}>
             <NavBar />
             <Box
@@ -28,16 +28,16 @@ function App() {
               mr={'auto'}
             >
               <Switch>
-                <Route path="/">
+                <Route exact path="/">
                   <Home />
                 </Route>
-                <Route path="/product/add">
+                <Route exact path="/product/add">
                   <ProductAddEdit />
                 </Route>
-                <Route path="/product/:id">
+                <Route exact path="/product/:id">
                   <ProductDetails />
                 </Route>
-                <Route path="/cart">
+                <Route exact path="/cart">
                   <Cart />
                 </Route>
               </Switch>

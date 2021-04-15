@@ -1,7 +1,7 @@
 {
   "name": "demo-cart",
   "version": "0.1.0",
-  "homepage": "https://curioustushar.github.io/react-sample-projects/demo-cart/",
+  "homepage": "./",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^1.0.9",

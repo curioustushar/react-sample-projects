@@ -17,7 +17,7 @@ export const fetchProducts = () => {
   return async dispatch => {
     try {
       const products = await fetchData('/products');
-      return dispatch({ type: SET_PRODUCTS, payload: products });
+      if (products) return dispatch({ type: SET_PRODUCTS, payload: products });
     } catch (error) {}
   };
 };
@@ -26,7 +26,9 @@ export const fetchCategories = () => {
   return async dispatch => {
     try {
       const categories = await fetchData('/products/categories');
-      return dispatch({ type: SET_PRODUCT_CATAGORIES, payload: categories });
+      if (categories) {
+        return dispatch({ type: SET_PRODUCT_CATAGORIES, payload: categories });
+      }
     } catch (error) {}
   };
 };
@@ -39,7 +41,7 @@ export const fetchProductDetails = id => {
   return async dispatch => {
     try {
       const productDetails = await fetchData(`/products/${id}`);
-      return dispatch(setProductDetails(productDetails));
+      if (productDetails) return dispatch(setProductDetails(productDetails));
     } catch (error) {}
   };
 };

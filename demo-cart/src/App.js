@@ -28,7 +28,7 @@ function App() {
               mr={'auto'}
             >
               <Switch>
-                <Route exact path="/">
+                <Route path="/">
                   <Home />
                 </Route>
                 <Route path="/product/add">

@@ -111,3 +111,5 @@ deploy.sh
 deploy-single.sh
 
 .history
+
+package-lock.json

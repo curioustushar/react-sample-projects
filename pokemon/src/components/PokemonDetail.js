@@ -1,16 +1,32 @@
-import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
-import { useQuery } from '@apollo/react-hooks';
+import React, { useEffect } from 'react';
+import { useParams, useHistory, useLocation } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { useLazyQuery } from '@apollo/react-hooks';
 import { GET_POKEMON_DETAILS } from '../graphql';
 
 export const PokemonDetail = () => {
+  const dispatch = useDispatch();
+  const pokemonDetail = useSelector((state) => state.pokemonDetail) || {};
   const britishNumberFormatter = new Intl.NumberFormat('en-GB');
   const params = useParams();
   const history = useHistory();
+  const { state } = useLocation();
 
-  const { loading, error, data } = useQuery(GET_POKEMON_DETAILS, {
-    variables: { id: params.id },
-  });
+  const [getPokemonDetails, { loading, error, data }] = useLazyQuery(
+    GET_POKEMON_DETAILS,
+    {
+      variables: { id: params.id },
+    },
+  );
+
+  useEffect(() => {
+    if (state && state?.pokemon) {
+      dispatch({ type: 'SET_POKEMON_DETAILS', payload: state.pokemon });
+    } else if (params.id) {
+      getPokemonDetails();
+    }
+    return () => {};
+  }, [dispatch, getPokemonDetails, state, params.id]);
 
   const goBack = () => {
     history.goBack();
@@ -19,40 +35,44 @@ export const PokemonDetail = () => {
   if (loading) return <p>Loading ...</p>;
   if (error) return <pre>{error}</pre>;
 
+  if (data) {
+    dispatch({ type: 'SET_POKEMON_DETAILS', payload: data.pokemon });
+  }
+
   return (
     <div className="pokemondetail">
       <button onClick={goBack}> Back</button>
       <div className="pokemon">
         <div className="pokemon__name">
-          <h1>{data?.pokemon.name}</h1>
+          <h1>{pokemonDetail.name}</h1>
         </div>
-        <h4>Classification: {data?.pokemon.classification}</h4>
+        <h4>Classification: {pokemonDetail.classification}</h4>
         <div className="pokemon__meta">
           <span>
-            maxHP: {britishNumberFormatter.format(data?.pokemon.maxHP)} &nbsp;
+            maxHP: {britishNumberFormatter.format(pokemonDetail.maxHP)} &nbsp;
           </span>
           <span>
-            maxCP: {britishNumberFormatter.format(data?.pokemon.maxCP)}
+            maxCP: {britishNumberFormatter.format(pokemonDetail.maxCP)}
           </span>
         </div>
         <br />
         <div className="pokemon__image">
-          <img src={data?.pokemon.image} alt={data?.pokemon.name} />
+          <img src={pokemonDetail.image} alt={pokemonDetail.name} />
         </div>
         <h1>Resistant</h1>
         <div className="pokemon__attacks">
-          {data?.pokemon?.resistant?.map((resistant, index) => (
+          {pokemonDetail?.resistant?.map((resistant, index) => (
             <span key={index}>{resistant} </span>
           ))}
         </div>
         <h1>Weaknesses</h1>
         <div className="pokemon__attacks">
-          {data?.pokemon?.weaknesses?.join(', ')}
+          {pokemonDetail?.weaknesses?.join(', ')}
         </div>
         <h1>Attacks</h1>
         <div className="pokemon__attacks">
-          <p>{data?.pokemon?.attacks?.fast.map((f) => f.name).join(', ')}</p>
-          <p>{data?.pokemon?.attacks?.special.map((s) => s.name).join(', ')}</p>
+          <p>{pokemonDetail?.attacks?.fast.map((f) => f.name).join(', ')}</p>
+          <p>{pokemonDetail?.attacks?.special.map((s) => s.name).join(', ')}</p>
         </div>
       </div>
     </div>

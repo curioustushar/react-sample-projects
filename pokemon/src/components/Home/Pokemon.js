@@ -13,7 +13,7 @@ export const Pokemon = ({ pokemon }) => {
         <span>{britishNumberFormatter.format(pokemon.maxCP)}</span>
       </div>
       <div className="pokemon__image">
-        <img src={pokemon.image} alt={pokemon.name} />
+        <img src={pokemon.image} alt={pokemon.name} loading="lazy" />
       </div>
       <div className="pokemon__attacks">
         {pokemon?.attacks?.special.slice(0, 3).map((attack) => (

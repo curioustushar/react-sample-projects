@@ -1,19 +1,46 @@
-import gql from 'graphql-tag';
+import { gql } from '@apollo/client';
 
 export const GET_POKEMONS = gql`
   query pokemons($first: Int!) {
     pokemons(first: $first) {
       id
+      number
       name
-      image
-      maxHP
-      maxCP
+      weight {
+        minimum
+        maximum
+      }
+      height {
+        minimum
+        maximum
+      }
+      classification
+      types
+      resistant
       attacks {
+        fast {
+          name
+          type
+          damage
+        }
         special {
           name
+          type
           damage
         }
       }
+      weaknesses
+      fleeRate
+      maxCP
+      evolutions {
+        id
+      }
+      evolutionRequirements {
+        amount
+        name
+      }
+      maxHP
+      image
     }
   }
 `;

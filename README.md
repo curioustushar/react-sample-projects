@@ -8,6 +8,8 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 
 ## Demo
 
+### Level 1
+
 | #   | Name               | Preview                                                                                                                                                                                             | Source                                     |
 | --- | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | 1   | Color Flipper      | <a href="https://curioustushar.github.io/react-sample-projects/color-flipper"> <img loading="lazy" src="docs/screenshots/color-flipper.jpg" alt="Color Flipper" width="200px" /></a>                | [Color Flipper](./color-flipper)           |
@@ -35,10 +37,15 @@ If you found this project useful, then please consider giving it a ⭐️ on Git
 | 23  | Expense Tracker    | <a href="https://curioustushar.github.io/react-sample-projects/expense-tracker"> <img loading="lazy" src="docs/screenshots/expense-tracker.jpg" alt="expense-tracker" width="200px" /></a>          | [Expense Tracker](./expense-tracker)       |
 | 24  | Breakout Game      | <a href="https://curioustushar.github.io/react-sample-projects/breakout-game"> <img loading="lazy" src="docs/screenshots/breakout-game.jpg" alt="breakout-game" width="200px" /></a>                | [Breakout Game](./breakout-game)           |
 | 25  | Hulu Clone         | <a href="https://curioustushar.github.io/react-sample-projects/hulu-clone"> <img loading="lazy" src="docs/screenshots/hulu-clone.jpg" alt="hulu-clone" width="200px" /></a>                         | [Hulu Clone](./hulu-clone)                 |
-| 26  | Music Player       | <a href="https://curioustushar.github.io/react-sample-projects/music-player"> <img loading="lazy" src="docs/screenshots/music-player.jpg" alt="music-player" width="200px" /></a>                   | [Music Player](./music-player)             |
-| 27  | Leaflet Demos      | <a href="https://curioustushar.github.io/react-sample-projects/leaflet-demos"> <img loading="lazy" src="docs/screenshots/leaflet-demos.jpg" alt="leaflet-demos" width="200px" /></a>                | [Leaflet Demos](./leaflet-demos)           |
-| 28  | Pokemon            | <a href="https://curioustushar.github.io/react-sample-projects/pokemon"> <img loading="lazy" src="docs/screenshots/pokemon-img.jpg" alt="Pokemon" width="200px" /></a>                              | [Pokemon](./pokemon)                       |
-| 28  | Demo Cart          | <a href="https://curioustushar.github.io/react-sample-projects/demo-cart"> <img loading="lazy" src="docs/screenshots/demo-cart.jpg" alt="Demo Cart" width="200px" /></a>                            | [Demo cart](./demo-cart)                   |
+
+### Level 2
+
+| #   | Name          | Preview                                                                                                                                                                              | Source                           | Plugins used                                 |
+| --- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------- | -------------------------------------------- |
+| 1   | Music Player  | <a href="https://curioustushar.github.io/react-sample-projects/music-player"> <img loading="lazy" src="docs/screenshots/music-player.jpg" alt="music-player" width="200px" /></a>    | [Music Player](./music-player)   |                                              |
+| 2   | Leaflet Demos | <a href="https://curioustushar.github.io/react-sample-projects/leaflet-demos"> <img loading="lazy" src="docs/screenshots/leaflet-demos.jpg" alt="leaflet-demos" width="200px" /></a> | [Leaflet Demos](./leaflet-demos) | `leaflet`                                    |
+| 3   | Pokemon       | <a href="https://curioustushar.github.io/react-sample-projects/pokemon"> <img loading="lazy" src="docs/screenshots/pokemon-img.jpg" alt="Pokemon" width="200px" /></a>               | [Pokemon](./pokemon)             | `redux`, `graphql`, `apollo`                 |
+| 4   | Demo Cart     | <a href="https://curioustushar.github.io/react-sample-projects/demo-cart"> <img loading="lazy" src="docs/screenshots/demo-cart.jpg" alt="Demo Cart" width="200px" /></a>             | [Demo cart](./demo-cart)         | `redux`, `redux-thunk` `chakra-ui`, `formik` |
 
 ## TODO
 

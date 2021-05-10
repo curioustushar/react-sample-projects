@@ -62,7 +62,7 @@ export const Navbar = () => {
         >
           {isDark ? <WbSunnyIcon /> : <Brightness2Icon />}
         </IconButton>
-        <IconButton color="inherit" aria-label="github">
+        <IconButton color="inherit" aria-label="github" target="_blank" href="https://github.com/curioustushar/react-sample-projects/blob/master/notes">
           <GitHubIcon />
         </IconButton>
       </Toolbar>

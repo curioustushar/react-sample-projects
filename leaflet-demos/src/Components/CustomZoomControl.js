@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, TileLayer, ZoomControl } from 'react-leaflet';
+import { MapContainer as Map, TileLayer, ZoomControl } from 'react-leaflet';
 
 export const CustomZoomControl = () => {
   const position = [28.7041, 77.1025];

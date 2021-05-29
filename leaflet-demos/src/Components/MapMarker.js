@@ -1,6 +1,6 @@
 import React from 'react';
 import L from 'leaflet';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer as Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
 delete L.Icon.Default.prototype._getIconUrl;
 

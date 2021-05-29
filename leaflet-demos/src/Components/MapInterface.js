@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Map, TileLayer } from 'react-leaflet';
+import { MapContainer as Map, TileLayer } from 'react-leaflet';
 
 export const MapInterface = () => {
   const mapRef = useRef();

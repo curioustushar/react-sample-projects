@@ -113,3 +113,5 @@ deploy-single.sh
 .history
 
 package-lock.json
+
+.DS_Store

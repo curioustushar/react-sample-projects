@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import L from 'leaflet';
-import { Map, TileLayer } from 'react-leaflet';
+import { MapContainer as Map, TileLayer } from 'react-leaflet';
 
 export const BrowserLocation = () => {
   const mapRef = useRef();

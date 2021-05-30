@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapContainer as Map, TileLayer, Circle } from 'react-leaflet';
+import { Map, TileLayer, Circle } from 'react-leaflet';
 
 export const AddShapesToMap = () => {
   const state = {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  MapContainer as Map,
+  Map,
   TileLayer,
   Circle,
   LayerGroup,

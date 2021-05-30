@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { MapContainer as Map, TileLayer } from 'react-leaflet';
+import { Map, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 
 import nationalParks from './../national-parks.json';

@@ -7,9 +7,9 @@ export const MapInterface = () => {
   useEffect(() => {
     const { current = {} } = mapRef;
     const { leafletElement: map } = current;
-    setTimeout(() => {
-      map.flyTo([28.3852, -81.5639], 14, { duration: 3 });
-    }, 1000);
+    map
+      .panTo([40.737, -73.923])
+      .flyTo([28.3852, -81.5639], 14, { duration: 3 });
     return () => {};
   }, [mapRef]);
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Box, theme } from '@chakra-ui/react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/Navbar';
 import Home from './components/Home';
 import ProductDetails from './components/ProductDetails';
@@ -27,20 +27,20 @@ function App() {
               ml={'auto'}
               mr={'auto'}
             >
-              <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route exact path="/product/add">
-                  <ProductAddEdit />
-                </Route>
-                <Route exact path="/product/:id">
-                  <ProductDetails />
-                </Route>
-                <Route exact path="/cart">
-                  <Cart />
-                </Route>
-              </Switch>
+              <Routes>
+                <Route exact path="/" element={<Home />}></Route>
+                <Route
+                  exact
+                  path="/product/add"
+                  element={<ProductAddEdit />}
+                ></Route>
+                <Route
+                  exact
+                  path="/product/:id"
+                  element={<ProductDetails />}
+                ></Route>
+                <Route exact path="/cart" element={<Cart />}></Route>
+              </Routes>
             </Box>
           </ChakraProvider>
         </Router>

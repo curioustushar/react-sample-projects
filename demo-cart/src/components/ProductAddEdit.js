@@ -5,12 +5,12 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCategories, addNewProduct } from './../actions/product.actions';
-import { useHistory } from 'react-router';
+import { useNavigate } from 'react-router';
 
 const ProductAddEdit = () => {
   const categories = useSelector(state => state.product.categories);
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const initialValues = {
     title: '',
@@ -31,7 +31,7 @@ const ProductAddEdit = () => {
   const onFormSubmit = (values, actions) => {
     actions.setSubmitting(false);
     dispatch(addNewProduct(values));
-    history.push('/');
+    navigate('/');
   };
 
   useEffect(() => {

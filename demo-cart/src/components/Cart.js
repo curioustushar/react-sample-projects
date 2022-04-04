@@ -3,15 +3,15 @@ import { Table, Thead, Tbody, Tr, Td, Th } from '@chakra-ui/react';
 import { Box, Avatar, Flex, Button } from '@chakra-ui/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteItemFromCart } from '../actions/cart.actions';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
   const cartItems = useSelector(state => state.cart.cartItems);
 
   const viewProductDetails = (e, item) => {
-    history.push(`/product/${item.id}`);
+    navigate(`/product/${item.id}`);
   };
 
   const deleteItem = (e, item) => {

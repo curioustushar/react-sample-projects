@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams, useHistory, useLocation } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useLazyQuery } from '@apollo/react-hooks';
 import { GET_POKEMON_DETAILS } from '../graphql';
@@ -9,7 +9,7 @@ export const PokemonDetail = () => {
   const pokemonDetail = useSelector((state) => state.pokemonDetail) || {};
   const britishNumberFormatter = new Intl.NumberFormat('en-GB');
   const params = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
   const { state } = useLocation();
 
   const [getPokemonDetails, { loading, error, data }] = useLazyQuery(
@@ -29,7 +29,7 @@ export const PokemonDetail = () => {
   }, [dispatch, getPokemonDetails, state, params.id]);
 
   const goBack = () => {
-    history.goBack();
+    navigate(-1);
   };
 
   if (loading) return <p>Loading ...</p>;

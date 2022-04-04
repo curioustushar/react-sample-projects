@@ -106,6 +106,7 @@ dist
 .idea
 
 links.txt
+todo.txt
 
 deploy.sh
 deploy-single.sh

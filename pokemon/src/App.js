@@ -1,6 +1,6 @@
 import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { ApolloProvider } from '@apollo/react-hooks';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './components/Home';
 import { PokemonDetail } from './components/PokemonDetail';
 import { store } from './store';
@@ -17,14 +17,14 @@ function App() {
     <ApolloProvider client={client}>
       <Provider store={store}>
         <Router hashType="slash">
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/pokemon/:id">
-              <PokemonDetail />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route
+              exact
+              path="/pokemon/:id"
+              element={<PokemonDetail />}
+            ></Route>
+          </Routes>
         </Router>
       </Provider>
     </ApolloProvider>

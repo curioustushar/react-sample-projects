@@ -11,11 +11,12 @@ export const NoteList = ({ items }) => {
     <div>
       {viewStyle === 'grid' && (
         <Grid container spacing={3}>
-          {items.map((d) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} key={d.id}>
-              <Note note={{ ...d.data(), id: d.id }} />
-            </Grid>
-          ))}
+          {items &&
+            items.map((d) => (
+              <Grid item xs={12} sm={6} md={4} lg={3} key={d.id}>
+                <Note note={{ ...d.data(), id: d.id }} />
+              </Grid>
+            ))}
         </Grid>
       )}
       {viewStyle !== 'grid' &&

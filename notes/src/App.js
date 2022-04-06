@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Box from '@material-ui/core/Box';
 
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { Home } from './layouts/Home';
 import { Labels } from './layouts/Labels';
@@ -52,20 +52,20 @@ export default function App() {
               <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Box p={2}>
-                  <Switch>
-                    <Route exact path="/">
-                      <Home />
-                    </Route>
-                    <Route exact path="/reminders">
-                      <Reminders />
-                    </Route>
-                    <Route exact path="/labels">
-                      <Labels />
-                    </Route>
-                    <Route exact path="/favorites">
-                      <Favorites />
-                    </Route>
-                  </Switch>
+                  <Routes>
+                    <Route exact path="/" element={<Home />}></Route>
+                    <Route
+                      exact
+                      path="/reminders"
+                      element={<Reminders />}
+                    ></Route>
+                    <Route exact path="/labels" element={<Labels />}></Route>
+                    <Route
+                      exact
+                      path="/favorites"
+                      element={<Favorites />}
+                    ></Route>
+                  </Routes>
                 </Box>
               </main>
             </div>

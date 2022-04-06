@@ -92,7 +92,7 @@ export const NavigationDrawer = () => {
         <List>
           {NavigationLinks.map((link, index) => (
             <NavLink
-              exact
+              exact={'true'}
               key={link.label}
               to={link.path}
               className={classes.itemlink}

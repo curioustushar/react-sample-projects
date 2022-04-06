@@ -65,7 +65,7 @@ export const Form = ({ onSubmit }) => {
             label="Description"
             name="description"
             multiline
-            rows={3}
+            minRows={3}
             className={classes.input}
             defaultValue={form.description}
             onChange={onChangeValue}
@@ -75,7 +75,7 @@ export const Form = ({ onSubmit }) => {
             className={classes.button}
             container
             direction="row"
-            justify="center"
+            justifyContent="center"
             alignItems="center"
           >
             <Button variant="contained" color="primary" type="submit">

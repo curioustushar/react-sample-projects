@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
-import { ThemeProvider } from '@material-ui/core';
-import { createMuiTheme } from '@material-ui/core/styles';
+// import { ThemeProvider } from '@material-ui/core';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 
 export const light = {
   palette: {
@@ -19,10 +19,11 @@ const ThemeContextProvider = ({ children }) => {
   const [isDark, setDarkMode] = useState(
     window.matchMedia('(prefers-color-scheme: dark)').matches,
   );
-  const theme = createMuiTheme(isDark ? dark : light);
+  const theme = createTheme(isDark ? dark : light);
   const toggleTheme = () => {
     setDarkMode(() => !isDark);
   };
+
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
